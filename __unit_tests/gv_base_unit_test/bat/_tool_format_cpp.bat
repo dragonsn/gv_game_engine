@@ -1,0 +1,1 @@
+gv_base_unit_test.exe console tool tool_file_visitor -cmd -"clang-format -i -style=file  %%file%% " -path -%1 -pattern -"gv*.cpp" -pattern -"gv*.hpp" -pattern -"gv*.h" -pattern -"unit_test_*.hpp" -"tool_*.hpp"

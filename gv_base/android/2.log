@@ -1,0 +1,3 @@
+:(\d+):(\d+)
+($1)
+make: *** No rule to make target `jni/../../../../../../../gv_game_engine/gv_base/all_in_one/gv_base_all_in_one.cpp', needed by `obj/local/armeabi-v7a/objs/gv_base/all_in_one/gv_base_all_in_one.o'.  Stop.

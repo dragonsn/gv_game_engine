@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="debug_renderer">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="__pre">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_src">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="__all_in_one">
+      <UniqueIdentifier>{a893e55c-2e50-4a50-a24b-6040cfe0978d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__classes">
+      <UniqueIdentifier>{5ae49265-d15c-434f-ac4f-df1e027fa29f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gv_gameplay3d">
+      <UniqueIdentifier>{a373321d-8f91-402a-8487-181d8f081829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__android">
+      <UniqueIdentifier>{c1631955-f77e-48a4-a551-ac4b03d9dfef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__android\jni">
+      <UniqueIdentifier>{6293ab4c-a56b-45f3-b771-f5392709fe3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__inc">
+      <UniqueIdentifier>{0facc1db-c891-49d4-a360-785003e69918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameplay_dep">
+      <UniqueIdentifier>{a2505889-f7df-44de-8d70-043bb8bbda2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gv_debug_renderer_gameplay3d.h">
+      <Filter>debug_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_debug_renderer_gameplay3d.hpp">
+      <Filter>debug_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>__pre</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>__pre</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_gameplay3d_classes.h">
+      <Filter>__classes</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_driver_gameplay3d.hpp">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_gp_helper.h">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_gp_helper.hpp">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_graphic_cache_gameplay3d.h">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_hook_gameplay3d.h">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_hook_gameplay3d.hpp">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_hook_gameplay3d_rendering.hpp">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_gameplay3d.h">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_gameplay3d.hpp">
+      <Filter>gv_gameplay3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_gp.h">
+      <Filter>__inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>__pre</Filter>
+    </ClCompile>
+    <ClCompile Include="gameplay_all_in_one.cpp">
+      <Filter>__all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_driver_gameplay3d_all_in_one.cpp">
+      <Filter>__all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_driver_gameplay3d_platform_all_in_one.cpp">
+      <Filter>__all_in_one</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gen_cpp.bat">
+      <Filter>__all_in_one</Filter>
+    </None>
+    <None Include="android\jni\Android.mk">
+      <Filter>__android\jni</Filter>
+    </None>
+    <None Include="android\jni\Application.mk">
+      <Filter>__android\jni</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="file_list.txt">
+      <Filter>__all_in_one</Filter>
+    </Text>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="android\AndroidManifest.xml">
+      <Filter>__android</Filter>
+    </Xml>
+    <Xml Include="android\build.xml">
+      <Filter>__android</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

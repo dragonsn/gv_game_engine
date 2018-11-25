@@ -1,0 +1,11 @@
+GVM_DCL_NET_REPLICA(net_unit_2d, 1)
+GVM_NET_REPLICA_VAR(gv_bool, m_visible)
+GVM_NET_REPLICA_VAR(gv_ushort, m_id)
+GVM_NET_REPLICA_PRIORITY(1)
+GVM_DO_REPLICA_IF(m_visible)
+GVM_NET_REPLICA_VAR(gv_byte, m_type)
+GVM_NET_REPLICA_VAR(gv_byte, m_state)
+GVM_NET_REPLICA_VAR(gv_vector2w, m_pos)
+GVM_NET_REPLICA_VAR(gv_float, m_facing)
+GVM_DO_REPLICA_END_IF
+GVM_END_DCL_NET_REPLICA

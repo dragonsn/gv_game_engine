@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DLL|Win32">
+      <Configuration>Debug_DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_DLL|x64">
+      <Configuration>Debug_DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Android|Win32">
+      <Configuration>Debug_Android</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Android|x64">
+      <Configuration>Debug_Android</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DLL|Win32">
+      <Configuration>Release_DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DLL|x64">
+      <Configuration>Release_DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Android|Win32">
+      <Configuration>Release_Android</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Android|x64">
+      <Configuration>Release_Android</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}</ProjectGuid>
+    <RootNamespace>gv_framework</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <SccAuxPath>
+    </SccAuxPath>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|Win32'">
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <NMakeBuildCommandLine>..\..\gv_script\build_android $(ProjectDir) $(OutDir) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>rd  $(OutDir) /S /Q
+..\..\gv_script\build_android $(ProjectDir) $(OutDir) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rd  $(OutDir) /S /Q</NMakeCleanCommandLine>
+    <NMakeOutput />
+    <NMakePreprocessorDefinitions>__ANDROID__</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|x64'">
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <NMakeBuildCommandLine>..\..\gv_script\build_android $(ProjectDir) $(ProjectName)</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>rd  $(OutDir) /S /Q
+..\..\gv_script\build_android $(ProjectDir) $(OutDir) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rd  $(OutDir) /S /Q</NMakeCleanCommandLine>
+    <NMakeOutput />
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'">
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <NMakeBuildCommandLine />
+    <NMakeReBuildCommandLine />
+    <NMakeCleanCommandLine />
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'">
+    <IntDir>..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <NMakeBuildCommandLine />
+    <NMakeReBuildCommandLine />
+    <NMakeCleanCommandLine />
+    <NMakeOutput />
+    <OutDir>..\..\gv_game\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_external;..\;..\gv_base\inc;..\gv_framework\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_external;..\;..\gv_base\inc;..\gv_framework\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\gv_external;..\;..\gv_base\inc;..\gv_framework\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\gv_external;..\;..\gv_base\inc;..\gv_framework\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_CRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_external;..\;..\gv_base\inc;..\gv_framework\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;USE_CRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\gv_base\inc;..\gv_framework\inc;..\..\gv_external;..\..\gv_external\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;USE_CRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\gv_external;..\;..\gv_base\inc;..\gv_framework\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_CRT_DLL;GVM_NOT_SUPPORT_FBX;GVM_NOT_SUPPORT_CEGUI;GVM_NOT_SUPPORT_XIMAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\;..\gv_base\inc;..\gv_framework\inc;..\..\gv_external;..\..\gv_external\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_CRT_DLL;GVM_NOT_SUPPORT_FBX;GVM_NOT_SUPPORT_CEGUI;GVM_NOT_SUPPORT_XIMAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gv_framework_private.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)gv_framework.lib</OutputFile>
+      <AdditionalLibraryDirectories> ;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ai\gv_ai.cpp" />
+    <ClCompile Include="animation\gv_animation_all_in_one.cpp" />
+    <ClCompile Include="component\gv_com_controller_all_in_one.cpp" />
+    <ClCompile Include="component\gv_com_graphic_all_in_one.cpp" />
+    <ClCompile Include="component\gv_com_terrain_all_in_one.cpp" />
+    <ClCompile Include="component\gv_entity_all_in_one.cpp" />
+    <ClCompile Include="network\gv_network_manager_all_in_one.cpp" />
+    <ClCompile Include="renderer\gv_material_all_in_one.cpp" />
+    <ClCompile Include="renderer\gv_renderer_all_in_one.cpp" />
+    <ClCompile Include="src\gv_framework.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">gv_framework_private.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">gv_framework_private.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gv_framework_private.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gv_framework_private.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\gv_object.cpp" />
+    <ClCompile Include="src\gv_utility.cpp" />
+    <ClCompile Include="user_interface\gv_ui_all_in_one.cpp" />
+    <ClCompile Include="utility\gv_id_lexer.cpp" />
+    <ClCompile Include="world\gv_world_all_in_one.cpp" />
+    <ClCompile Include="_all_in_one\gv_engine_all_in_one.cpp" />
+    <ClCompile Include="_all_in_one\gv_object_all_in_one.cpp" />
+    <ClCompile Include="_all_in_one\gv_sandbox_all_in_one.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ai\gv_ai.h" />
+    <ClInclude Include="ai\gv_bt_macro.h" />
+    <ClInclude Include="ai\gv_com_ai_player_controller_rpg.hpp" />
+    <ClInclude Include="animation\gv_animation.h" />
+    <ClInclude Include="animation\gv_ani_key.h" />
+    <ClInclude Include="animation\gv_ani_sequence.h" />
+    <ClInclude Include="animation\gv_ani_sequence.hpp" />
+    <ClInclude Include="animation\gv_ani_set.h" />
+    <ClInclude Include="animation\gv_ani_set.hpp" />
+    <ClInclude Include="animation\gv_ani_skeletal.h" />
+    <ClInclude Include="animation\gv_ani_skeletal.hpp" />
+    <ClInclude Include="animation\gv_ani_struct.h" />
+    <ClInclude Include="animation\gv_ani_track.h" />
+    <ClInclude Include="animation\gv_ani_track.hpp" />
+    <ClInclude Include="animation\gv_ani_tree.h" />
+    <ClInclude Include="animation\gv_com_animation.hpp" />
+    <ClInclude Include="component\gv_component.hpp" />
+    <ClInclude Include="component\gv_component_manager.hpp" />
+    <ClInclude Include="component\gv_com_3d_lobby_controller.hpp" />
+    <ClInclude Include="component\gv_com_ai_script.h" />
+    <ClInclude Include="component\gv_com_animation.h" />
+    <ClInclude Include="component\gv_com_attach.h" />
+    <ClInclude Include="component\gv_com_attach.hpp" />
+    <ClInclude Include="component\gv_com_camera.h" />
+    <ClInclude Include="component\gv_com_camera.hpp" />
+    <ClInclude Include="component\gv_com_cam_fps_fly.hpp" />
+    <ClInclude Include="component\gv_com_client.h" />
+    <ClInclude Include="component\gv_com_graphic.h" />
+    <ClInclude Include="component\gv_com_graphic.hpp" />
+    <ClInclude Include="component\gv_com_observer_camera_controller.hpp" />
+    <ClInclude Include="component\gv_com_particle.h" />
+    <ClInclude Include="component\gv_com_physics.h" />
+    <ClInclude Include="component\gv_com_server.h" />
+    <ClInclude Include="component\gv_com_skeletal_debugger.hpp" />
+    <ClInclude Include="component\gv_com_skeletal_mesh.h" />
+    <ClInclude Include="component\gv_com_skeletal_mesh.hpp" />
+    <ClInclude Include="component\gv_com_static_mesh.h" />
+    <ClInclude Include="component\gv_com_static_mesh.hpp" />
+    <ClInclude Include="component\gv_com_tasklet.h" />
+    <ClInclude Include="component\gv_com_tasklet.hpp" />
+    <ClInclude Include="component\gv_com_terrain.h" />
+    <ClInclude Include="component\gv_com_terrain_grass.h" />
+    <ClInclude Include="component\gv_com_terrain_grass.hpp" />
+    <ClInclude Include="component\gv_com_terrain_roam.h" />
+    <ClInclude Include="component\gv_com_terrain_roam.hpp" />
+    <ClInclude Include="component\gv_com_terrain_structs.h" />
+    <ClInclude Include="component\gv_com_trigger.h" />
+    <ClInclude Include="component\gv_com_x_mesh.h" />
+    <ClInclude Include="component\gv_entity.hpp" />
+    <ClInclude Include="component\gv_entity_manager.hpp" />
+    <ClInclude Include="component\gv_resource.hpp" />
+    <ClInclude Include="component\gv_resource_manager.hpp" />
+    <ClInclude Include="engine\gv_com_game.h" />
+    <ClInclude Include="engine\gv_com_game.hpp" />
+    <ClInclude Include="engine\gv_engine_struct.h" />
+    <ClInclude Include="engine\gv_game_engine.h" />
+    <ClInclude Include="engine\gv_game_engine.hpp" />
+    <ClInclude Include="engine\gv_game_engine_main.hpp" />
+    <ClInclude Include="engine\gv_game_engine_main_android.hpp" />
+    <ClInclude Include="engine\gv_game_engine_main_win32.hpp" />
+    <ClInclude Include="engine\gv_game_event_processor.hpp" />
+    <ClInclude Include="gv_framework_plan.hpp" />
+    <ClInclude Include="inc\gv_class_info.h" />
+    <ClInclude Include="inc\gv_class_macro_pp.h" />
+    <ClInclude Include="inc\gv_component.h" />
+    <ClInclude Include="inc\gv_data_model.h" />
+    <ClInclude Include="inc\gv_data_model_enum.h" />
+    <ClInclude Include="inc\gv_data_model_event.h" />
+    <ClInclude Include="inc\gv_data_model_ex.h" />
+    <ClInclude Include="inc\gv_driver.h" />
+    <ClInclude Include="inc\gv_entity.h" />
+    <ClInclude Include="inc\gv_entity_manager.h" />
+    <ClInclude Include="inc\gv_event_channels.h" />
+    <ClInclude Include="inc\gv_event_maker.h" />
+    <ClInclude Include="inc\gv_event_processor.h" />
+    <ClInclude Include="inc\gv_framework.h" />
+    <ClInclude Include="inc\gv_framework_classes.h" />
+    <ClInclude Include="inc\gv_framework_defines.h" />
+    <ClInclude Include="inc\gv_framework_events.h" />
+    <ClInclude Include="inc\gv_framework_event_ids.h" />
+    <ClInclude Include="inc\gv_framework_ids.h" />
+    <ClInclude Include="inc\gv_framework_config.h" />
+    <ClInclude Include="inc\gv_framework_private.h" />
+    <ClInclude Include="inc\gv_framework_va_helper.h" />
+    <ClInclude Include="inc\gv_func_info.h" />
+    <ClInclude Include="inc\gv_func_param_structs.h" />
+    <ClInclude Include="inc\gv_id_lexer.h" />
+    <ClInclude Include="inc\gv_importer_exporter.h" />
+    <ClInclude Include="inc\gv_input_manager.h" />
+    <ClInclude Include="inc\gv_module.h" />
+    <ClInclude Include="inc\gv_net_event.h" />
+    <ClInclude Include="inc\gv_object.h" />
+    <ClInclude Include="inc\gv_object_builder.h" />
+    <ClInclude Include="inc\gv_object_event.h" />
+    <ClInclude Include="inc\gv_object_event_pp.h" />
+    <ClInclude Include="inc\gv_object_job.h" />
+    <ClInclude Include="inc\gv_object_macro.h" />
+    <ClInclude Include="inc\gv_object_package.h" />
+    <ClInclude Include="inc\gv_object_struct.h" />
+    <ClInclude Include="inc\gv_persistent_type.h" />
+    <ClInclude Include="inc\gv_render_event.h" />
+    <ClInclude Include="inc\gv_resource.h" />
+    <ClInclude Include="inc\gv_resource_manager.h" />
+    <ClInclude Include="inc\gv_sandbox.h" />
+    <ClInclude Include="inc\gv_sandbox_manager.h" />
+    <ClInclude Include="inc\gv_type.h" />
+    <ClInclude Include="inc\gv_ui_event.h" />
+    <ClInclude Include="inc\gv_var_info.h" />
+    <ClInclude Include="inc\gv_world_event.h" />
+    <ClInclude Include="network\gv_com_net_host.h" />
+    <ClInclude Include="network\gv_com_net_host.hpp" />
+    <ClInclude Include="network\gv_com_net_replica.h" />
+    <ClInclude Include="network\gv_com_net_replica.hpp" />
+    <ClInclude Include="network\gv_database_manager.h" />
+    <ClInclude Include="network\gv_database_manager.hpp" />
+    <ClInclude Include="network\gv_lockstep_manager.h" />
+    <ClInclude Include="network\gv_network_framework.h" />
+    <ClInclude Include="network\gv_network_manager.h" />
+    <ClInclude Include="network\gv_network_manager.hpp" />
+    <ClInclude Include="network\gv_net_cmd.h" />
+    <ClInclude Include="network\gv_net_cmd_basic.h" />
+    <ClInclude Include="network\gv_net_cmd_maker.h" />
+    <ClInclude Include="network\gv_net_commands.h" />
+    <ClInclude Include="network\gv_net_replica.h" />
+    <ClInclude Include="network\gv_net_replica.hpp" />
+    <ClInclude Include="network\gv_net_replicas.h" />
+    <ClInclude Include="network\gv_net_replica_basic.h" />
+    <ClInclude Include="network\gv_net_replica_maker.h" />
+    <ClInclude Include="network\gv_net_va_helper.h" />
+    <ClInclude Include="network\gv_remote_call.h" />
+    <ClInclude Include="network\gv_remote_call.hpp" />
+    <ClInclude Include="network\gv_remote_calls.h" />
+    <ClInclude Include="network\gv_remote_call_basic.h" />
+    <ClInclude Include="network\gv_remote_call_maker.h" />
+    <ClInclude Include="network\gv_remote_call_maker_helper.h" />
+    <ClInclude Include="network\gv_server.h" />
+    <ClInclude Include="renderer\gv_component_renderer.h" />
+    <ClInclude Include="renderer\gv_debug_renderer.h" />
+    <ClInclude Include="renderer\gv_debug_renderer.hpp" />
+    <ClInclude Include="renderer\gv_effect.h" />
+    <ClInclude Include="renderer\gv_effect.hpp" />
+    <ClInclude Include="renderer\gv_effect_semantic.h" />
+    <ClInclude Include="renderer\gv_effect_struct.h" />
+    <ClInclude Include="renderer\gv_image.h" />
+    <ClInclude Include="renderer\gv_image.hpp" />
+    <ClInclude Include="renderer\gv_index_buffer.h" />
+    <ClInclude Include="renderer\gv_material.h" />
+    <ClInclude Include="renderer\gv_material.hpp" />
+    <ClInclude Include="renderer\gv_material_template.h" />
+    <ClInclude Include="renderer\gv_model.h" />
+    <ClInclude Include="renderer\gv_model.hpp" />
+    <ClInclude Include="renderer\gv_particle_emitter.h" />
+    <ClInclude Include="renderer\gv_particle_system.h" />
+    <ClInclude Include="renderer\gv_pixel_format.h" />
+    <ClInclude Include="renderer\gv_pixel_shader.h" />
+    <ClInclude Include="renderer\gv_renderer.h" />
+    <ClInclude Include="renderer\gv_renderer.hpp" />
+    <ClInclude Include="renderer\gv_renderer_va_helper.h" />
+    <ClInclude Include="renderer\gv_render_option.h" />
+    <ClInclude Include="renderer\gv_render_option.hpp" />
+    <ClInclude Include="renderer\gv_render_resource.h" />
+    <ClInclude Include="renderer\gv_render_unit_test.h" />
+    <ClInclude Include="renderer\gv_scene_renderer.h" />
+    <ClInclude Include="renderer\gv_shader.h" />
+    <ClInclude Include="renderer\gv_shader.hpp" />
+    <ClInclude Include="renderer\gv_skeletal_mesh.h" />
+    <ClInclude Include="renderer\gv_skeletal_mesh.hpp" />
+    <ClInclude Include="renderer\gv_static_mesh.h" />
+    <ClInclude Include="renderer\gv_static_mesh.hpp" />
+    <ClInclude Include="renderer\gv_terrain.h" />
+    <ClInclude Include="renderer\gv_texture.h" />
+    <ClInclude Include="renderer\gv_texture.hpp" />
+    <ClInclude Include="renderer\gv_ui_renderer.h" />
+    <ClInclude Include="renderer\gv_vertex_buffer.h" />
+    <ClInclude Include="renderer\gv_vertex_format.h" />
+    <ClInclude Include="renderer\gv_vertex_shader.h" />
+    <ClInclude Include="renderer\gv_vertex_usages.h" />
+    <ClInclude Include="src\gv_any.hpp" />
+    <ClInclude Include="src\gv_class_info.hpp" />
+    <ClInclude Include="src\gv_driver.hpp" />
+    <ClInclude Include="src\gv_event_processor.hpp" />
+    <ClInclude Include="src\gv_framework_structs.hpp" />
+    <ClInclude Include="src\gv_func_info.hpp" />
+    <ClInclude Include="src\gv_importer_exporter.hpp" />
+    <ClInclude Include="src\gv_module.hpp" />
+    <ClInclude Include="src\gv_object.hpp" />
+    <ClInclude Include="src\gv_object_builder.hpp" />
+    <ClInclude Include="src\gv_object_iterator.hpp" />
+    <ClInclude Include="src\gv_object_script.hpp" />
+    <ClInclude Include="src\gv_sandbox.hpp" />
+    <ClInclude Include="src\gv_sandbox_classes.hpp" />
+    <ClInclude Include="src\gv_sandbox_events.hpp" />
+    <ClInclude Include="src\gv_sandbox_manager.hpp" />
+    <ClInclude Include="src\gv_sandbox_module.hpp" />
+    <ClInclude Include="src\gv_sandbox_property.hpp" />
+    <ClInclude Include="src\gv_type.hpp" />
+    <ClInclude Include="src\gv_type_array.hpp" />
+    <ClInclude Include="src\gv_type_object.hpp" />
+    <ClInclude Include="src\gv_type_ptr.hpp" />
+    <ClInclude Include="src\gv_type_ref_ptr.hpp" />
+    <ClInclude Include="src\gv_type_static_array.hpp" />
+    <ClInclude Include="src\gv_type_text.hpp" />
+    <ClInclude Include="src\gv_var_info.hpp" />
+    <ClInclude Include="task\gv_task_manager.h" />
+    <ClInclude Include="task\gv_task_manager.hpp" />
+    <ClInclude Include="terrain\roam\gv_roam_chunk.hpp" />
+    <ClInclude Include="terrain\roam\gv_roam_node.hpp" />
+    <ClInclude Include="terrain\roam\gv_roam_patch.hpp" />
+    <ClInclude Include="user_interface\gvi_ui_manager.h" />
+    <ClInclude Include="user_interface\gvi_ui_manager.hpp" />
+    <ClInclude Include="user_interface\gv_input_manager.hpp" />
+    <ClInclude Include="user_interface\gv_ui_module.h" />
+    <ClInclude Include="user_interface\gv_ui_module.hpp" />
+    <ClInclude Include="utility\gv_id_lex.hpp" />
+    <ClInclude Include="utility\gv_id_space.h" />
+    <ClInclude Include="world\gv_2d_helper.hpp" />
+    <ClInclude Include="world\gv_actor_2d.hpp" />
+    <ClInclude Include="world\gv_actor_3d.h" />
+    <ClInclude Include="world\gv_actor_3d.hpp" />
+    <ClInclude Include="world\gv_collider_3d.h" />
+    <ClInclude Include="world\gv_collider_3d.hpp" />
+    <ClInclude Include="world\gv_physics_3d_fixed.h" />
+    <ClInclude Include="world\gv_physics_3d_fixed.hpp" />
+    <ClInclude Include="world\gv_world.h" />
+    <ClInclude Include="world\gv_world.hpp" />
+    <ClInclude Include="world\gv_world_2d.h" />
+    <ClInclude Include="world\gv_world_2d.hpp" />
+    <ClInclude Include="world\gv_world_3d.h" />
+    <ClInclude Include="world\gv_world_3d.hpp" />
+    <ClInclude Include="world\gv_world_grid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="android\jni\Android.mk" />
+    <None Include="android\jni\Application.mk" />
+    <None Include="utility\gv_ids.lx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="android\AndroidManifest.xml" />
+    <Xml Include="android\build.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="world\gv_world_grid.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gv_base\gv_base.vcxproj">
+      <Project>{2e81b5ae-41ea-4430-93b1-c7652217b957}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,6 @@
+#include "gv_framework_private.h"
+#include "gv_input_manager.h"
+#include "gv_ai.h"
+#include "../animation/gv_animation.h"
+#include "../component/gv_com_tasklet.hpp"
+#include "gv_com_ai_player_controller_rpg.hpp"

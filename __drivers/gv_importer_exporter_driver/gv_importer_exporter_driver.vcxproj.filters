@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_all_in_one">
+      <UniqueIdentifier>{ed7ef72c-70a2-4265-9f32-57049949ac99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_src\fbx">
+      <UniqueIdentifier>{53568253-29a9-4ad9-9b35-973772384f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_src\rfx">
+      <UniqueIdentifier>{07af3c88-17d9-4902-af14-9ad4d3f43c46}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gv_impexp_3ds.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_collada.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_cximage.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_fbx.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_obj.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_rfx.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_sn.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_impexp_classes.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_driver_impexp.hpp">
+      <Filter>_all_in_one</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\AnimationUtility.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\AnimationUtility.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\Common.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\Common.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayAnimation.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayAnimation.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayCamera.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayCamera.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayCommon.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayCommon.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayGenericInfo.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayGenericInfo.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayGlobalSettings.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayGlobalSettings.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayHierarchy.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayHierarchy.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayLight.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayLight.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayLink.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayLink.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayLodGroup.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayLodGroup.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayMarker.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayMarker.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayMaterial.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayMaterial.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayMesh.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayMesh.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayNurb.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayNurb.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayPatch.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayPatch.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayPivotsAndLimits.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayPivotsAndLimits.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayPose.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayPose.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayShape.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayShape.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplaySkeleton.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplaySkeleton.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayTexture.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayTexture.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayUserProperties.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\DisplayUserProperties.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\GeometryUtility.h">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\GeometryUtility.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\main.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\ViewScene.hpp">
+      <Filter>_src\fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="rfx\gv_rfx_dom.h">
+      <Filter>_src\rfx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>_src</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_imp_exp_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_imp_exp_fbx_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fbx\re.bat">
+      <Filter>_src\fbx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

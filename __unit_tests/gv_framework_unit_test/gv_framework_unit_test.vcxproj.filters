@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="framework_unit_tests_with_renderer_advance">
+      <UniqueIdentifier>{a0848935-8ece-487c-a41a-f01ee06d2fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework_unit_tests_network">
+      <UniqueIdentifier>{3a97501c-2417-4ecd-bd44-9412902dcaea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework_unit_tests">
+      <UniqueIdentifier>{95eefc83-ed98-4fa5-8bf2-26fd576952b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_all_in_one">
+      <UniqueIdentifier>{77de1334-59ee-420b-8739-3e973cd92229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework_tool">
+      <UniqueIdentifier>{03759703-f6a1-4aed-a1a3-10249dd47738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="framework_unit_tests_game">
+      <UniqueIdentifier>{7ed6a6f9-19be-4ba9-9573-bcd18cbb6c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__classes">
+      <UniqueIdentifier>{6a3ffeb0-e920-4699-8803-42e607ac6781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="famework_unit_tests_rendering">
+      <UniqueIdentifier>{18946750-f047-407f-9d49-c6b35e0e7264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework_unit_tests_debug_draw">
+      <UniqueIdentifier>{beae8d93-3da4-4836-b675-67f741032aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bat">
+      <UniqueIdentifier>{31eab071-8edf-422c-beff-a501e1db660b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework_unit_tests_with_renderer_advance\rts">
+      <UniqueIdentifier>{c5875924-2402-4a2a-887a-1be9ea72bbc7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unit_test_3d_lobby.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_ai_controller.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_database.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_game_engine.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_game_engine_async_load.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_image_process.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_network_login.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_rfx_view.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_roam_terrain.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_ui.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_world_2d.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_network_test_chat.hpp">
+      <Filter>framework_unit_tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_network_test_lobby_mmo.hpp">
+      <Filter>framework_unit_tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_network_test_lobby_with_replica.hpp">
+      <Filter>framework_unit_tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_network_test_replica.hpp">
+      <Filter>framework_unit_tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_network_test_send_command.hpp">
+      <Filter>framework_unit_tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_entity.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_fixed_point.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_job_queue.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_processor.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_reflection.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_sandbox.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_save_load.hpp">
+      <Filter>framework_unit_tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_binarize.hpp">
+      <Filter>framework_tool</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_perf_viewer_2d.hpp">
+      <Filter>framework_tool</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_console_test.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_console_test_windows.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_test_browser.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_unit_test_helper.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_simple_test_render.hpp">
+      <Filter>_src</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_dom_test.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_console_tests.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_test_res.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_framework_tests.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_rendering_test_common.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="2d_bricks_maps.h">
+      <Filter>framework_unit_tests_game</Filter>
+    </ClInclude>
+    <ClInclude Include="2d_bricks_online.h">
+      <Filter>framework_unit_tests_game</Filter>
+    </ClInclude>
+    <ClInclude Include="2d_bricks_online.hpp">
+      <Filter>framework_unit_tests_game</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_com_rpg2d_actor_online.h">
+      <Filter>__classes</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_com_rpg2d_actor_online.hpp">
+      <Filter>__classes</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_test_classes.h">
+      <Filter>__classes</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_world_rpg2d.h">
+      <Filter>__classes</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_world_rpg2d.hpp">
+      <Filter>__classes</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_3d_init.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_display_animation.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_image.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_importer_exporter.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_importer_exporter_3ds.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_importer_exporter_fbx.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_importer_exporter_rfx.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_load_x_file.hpp">
+      <Filter>famework_unit_tests_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gesture_2d.hpp">
+      <Filter>framework_unit_tests_debug_draw</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_render_geom_2d.hpp">
+      <Filter>framework_unit_tests_debug_draw</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_render_simple_2d.hpp">
+      <Filter>framework_unit_tests_debug_draw</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_render_with_input_2d.hpp">
+      <Filter>framework_unit_tests_debug_draw</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_touch_listener.hpp">
+      <Filter>framework_unit_tests_debug_draw</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_world_3d.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_morph_texture_builder.hpp">
+      <Filter>framework_tool</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_rts.h">
+      <Filter>framework_unit_tests_with_renderer_advance\rts</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_rts.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance\rts</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_rts_classes.h">
+      <Filter>framework_unit_tests_with_renderer_advance\rts</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_rts_imp.hpp">
+      <Filter>framework_unit_tests_with_renderer_advance\rts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gv_framework_unit_test_advanced_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_framework_unit_test_debug_draw_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_framework_unit_test_rendering_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_framework_unit_test_tools_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_framework_unit_tests_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_framework_unit_tests_networking_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_framework_unit_test.cpp">
+      <Filter>_src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>_src</Filter>
+    </ClCompile>
+    <ClCompile Include="first_online_game_2d_bricks.cpp">
+      <Filter>framework_unit_tests_game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bat\view_mp.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\view_mp_xml.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="..\..\..\gv_temp\New folder (10)\gv_game_engine\clear_scc.bat">
+      <Filter>bat</Filter>
+    </None>
+  </ItemGroup>
+</Project>

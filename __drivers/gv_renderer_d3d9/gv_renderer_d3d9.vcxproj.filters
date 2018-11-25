@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="com_renderer_d3d9">
+      <UniqueIdentifier>{fdef3deb-f2aa-443a-9180-6dd7951f8d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="com_renderer_d3d9\_for_test">
+      <UniqueIdentifier>{c8817193-a16c-4803-b51d-3e6de37d1b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="driver_d3d">
+      <UniqueIdentifier>{96a80e37-37d1-47f3-9d48-25333e3d7ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug_render">
+      <UniqueIdentifier>{1c2637e1-39b2-4361-8c56-11d85a4b7cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_classes">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_pre">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_inc">
+      <UniqueIdentifier>{6806b390-2ffd-4bed-a22f-d610c876748b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="post_effect">
+      <UniqueIdentifier>{e5ce7908-1931-402c-abb3-f3e11747f865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render_d3d">
+      <UniqueIdentifier>{cad641bb-b84b-4b2b-9a97-40cf515e7751}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="renderer\gv_com_effect_renderer.h">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_effect_renderer.hpp">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_instancing_renderer.hpp">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_roam_renderer.hpp">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_terrain_grass_renderer.hpp">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_simple_shader_renderer.h">
+      <Filter>com_renderer_d3d9\_for_test</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_simple_shader_renderer.hpp">
+      <Filter>com_renderer_d3d9\_for_test</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_wire_frame_render.h">
+      <Filter>com_renderer_d3d9\_for_test</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_x_mesh_renderer.h">
+      <Filter>com_renderer_d3d9\_for_test</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_com_x_mesh_renderer.hpp">
+      <Filter>com_renderer_d3d9\_for_test</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_driver_d3d.hpp">
+      <Filter>driver_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_render_device_d3d9.h">
+      <Filter>driver_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_render_target_mgr_d3d.h">
+      <Filter>driver_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_render_target_mgr_d3d.hpp">
+      <Filter>driver_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_resource_d3d_cache.h">
+      <Filter>driver_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_resource_d3d_cache.hpp">
+      <Filter>driver_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_debug_renderer_d3d.h">
+      <Filter>debug_render</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_d3d9_classes.h">
+      <Filter>_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_d3d_private.h">
+      <Filter>_pre</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_d3d_template.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_post_effect_mgr_d3d.h">
+      <Filter>post_effect</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_post_effect_mgr_d3d.hpp">
+      <Filter>post_effect</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_gpu_register_define.h">
+      <Filter>render_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_d3d9.h">
+      <Filter>render_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_d3d9.hpp">
+      <Filter>render_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_d3d9_precache.hpp">
+      <Filter>render_d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_renderer_d3d9_shadow.hpp">
+      <Filter>render_d3d</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="renderer\gv_com_renderer_d3d9.cpp">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_com_terrain_roam_renderer.cpp">
+      <Filter>com_renderer_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_renderer_d3d9_basis.cpp">
+      <Filter>driver_d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_debug_renderer_d3d.cpp">
+      <Filter>debug_render</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_render_d3d_private.cpp">
+      <Filter>_pre</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_renderer_d3d9.cpp">
+      <Filter>render_d3d</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

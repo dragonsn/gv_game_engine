@@ -1,0 +1,36 @@
+/*
+* all.hpp -- Lua core, libraries and interpreter in a single file
+*/
+#include "gv_base_internal.h"
+#if GV_WITH_LUA
+#define luaall_c
+#include "lua/src/lapi.hpp"
+#include "lua/src/lcode.hpp"
+#include "lua/src/ldebug.hpp"
+#include "lua/src/ldo.hpp"
+#include "lua/src/ldump.hpp"
+#include "lua/src/lfunc.hpp"
+#include "lua/src/lgc.hpp"
+#include "lua/src/llex.hpp"
+#include "lua/src/lmem.hpp"
+#include "lua/src/lobject.hpp"
+#include "lua/src/lopcodes.hpp"
+#include "lua/src/lparser.hpp"
+#include "lua/src/lstate.hpp"
+#include "lua/src/lstring.hpp"
+#include "lua/src/ltable.hpp"
+#include "lua/src/ltm.hpp"
+#include "lua/src/lundump.hpp"
+#include "lua/src/lvm.hpp"
+#include "lua/src/lzio.hpp"
+#include "lua/src/lauxlib.hpp"
+#include "lua/src/lbaselib.hpp"
+#include "lua/src/ldblib.hpp"
+#include "lua/src/liolib.hpp"
+#include "lua/src/linit.hpp"
+#include "lua/src/lmathlib.hpp"
+#include "lua/src/loadlib.hpp"
+#include "lua/src/loslib.hpp"
+#include "lua/src/lstrlib.hpp"
+#include "lua/src/ltablib.hpp"
+#endif

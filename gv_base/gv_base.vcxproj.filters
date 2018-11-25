@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_thread">
+      <UniqueIdentifier>{eb55e431-ef3f-4bd1-8a11-53c192708984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_lexer">
+      <UniqueIdentifier>{4c6f96d0-ec80-4fb9-af39-e28186573e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_file_system">
+      <UniqueIdentifier>{e619b983-e060-4dde-9421-e2a52ac778f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_memory">
+      <UniqueIdentifier>{10099bfe-ecce-442d-a7a5-06bea0f2d00b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_xml">
+      <UniqueIdentifier>{4e29534f-0da5-4428-8e57-4de000f62d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_container">
+      <UniqueIdentifier>{406e46f8-a9cd-4bcd-b728-b83f66bab30a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_performance">
+      <UniqueIdentifier>{c742ed8f-6ae3-4cd8-bfed-6869e088e77a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_network">
+      <UniqueIdentifier>{8edcd91f-94a0-4cc7-ada3-ecf3840cba15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_network\iocp">
+      <UniqueIdentifier>{c99d9a87-6815-4730-b0a6-f101856d64aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_math">
+      <UniqueIdentifier>{4fcb5ac1-2464-4247-baf2-4b021a1815eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__base">
+      <UniqueIdentifier>{d9687ddb-0d49-47de-8ce3-c68625b15b5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_log">
+      <UniqueIdentifier>{0582f982-a163-4ca2-87c3-ec61a7da8148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_string&amp;id">
+      <UniqueIdentifier>{fb6cdc6e-1c50-49da-8408-3b66d518fd9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_unit_test">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_timer&amp;date">
+      <UniqueIdentifier>{66a82d2f-2f05-4df6-940e-24802f9802ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_debug_console">
+      <UniqueIdentifier>{2ae9fb15-95a7-43f1-9c67-aa6a612c7d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___all_in_one">
+      <UniqueIdentifier>{e6d30905-0104-4e0e-9031-e8bdcca58389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__api">
+      <UniqueIdentifier>{43050879-2a89-4eed-9934-d483bb96fc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_database">
+      <UniqueIdentifier>{bc10db49-5b4a-4bcb-816b-fa21294907fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___android">
+      <UniqueIdentifier>{9b692df1-b5af-429c-858d-2b5af175e8f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___win32">
+      <UniqueIdentifier>{3b7abce8-8db5-4bfa-8c4f-8ea27d200c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___ansi">
+      <UniqueIdentifier>{b6a6cf2a-ccf9-46fa-927b-2c9d5802c45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_state_machine">
+      <UniqueIdentifier>{83b6f0fd-eadc-4a70-9730-037785a0b327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_gesture">
+      <UniqueIdentifier>{a976bc00-c63b-4ac5-b0f1-ba4064ba4b61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_lua">
+      <UniqueIdentifier>{3f5540ec-2892-4b44-a3a3-21bebaafa1ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___android\jni">
+      <UniqueIdentifier>{dec45b1b-7d6d-42c7-88fc-75dd4658a7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_android_src">
+      <UniqueIdentifier>{8cdafe41-56b4-48fe-a737-c27932ed296d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___config">
+      <UniqueIdentifier>{985dd233-2433-498d-bf3e-e4cff34aab25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___all_in_one_utility">
+      <UniqueIdentifier>{84e6dfa9-09d3-4cc2-ac00-76c5b88cbb80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\gv_atomic_count.h">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_conditional_var.h">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_conditional_var.hpp">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_mutex.h">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_policy_thread.h">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_shared_mutex.h">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_shared_mutex.hpp">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_thread.h">
+      <Filter>_thread</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_lang_cpp.h">
+      <Filter>_lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_lexer.h">
+      <Filter>_lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_pp_lexer.h">
+      <Filter>_lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_file_manager.h">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_file_manager.hpp">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_raw_data.h">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_stream.h">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_stream_detail.h">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_string_stream.h">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_policy_memory.h">
+      <Filter>_memory</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_memory_pool.h">
+      <Filter>_memory</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_memory_stack.h">
+      <Filter>_memory</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_lang_xml.h">
+      <Filter>_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_xml_parser.h">
+      <Filter>_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_xml_parser.hpp">
+      <Filter>_xml</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_singleton.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_array.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_array_static.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_bool_array.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_dictionary.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_hash_map.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_list.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_lock_free_buffer.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_lock_free_list.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_lock_free_pool.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_pool_fixed_size.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_ring_buf.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_set.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_slist.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_slist_no_alloc.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_stack.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_stack_static.h">
+      <Filter>_container</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_profiler.h">
+      <Filter>_performance</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_ip_address.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_network.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_normal_udp_server.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_normal_udp_server.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_packet.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_reliable_udp_implement.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_reliable_udp_server.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_reliable_udp_server.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_reliable_udp_server_detail.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_socket.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gvi_server_session_layer.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gvi_server_transport_layer.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_iocp_udp_server.h">
+      <Filter>_network\iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_iocp_udp_server.hpp">
+      <Filter>_network\iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_box.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_circle.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_color.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_euler.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_filter.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_frustum.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_image_process.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_line.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_line_segment.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_math.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_math_read_write.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_math_xna.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_matrix43.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_matrix44.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_plane.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_quat.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_random.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_rect.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_sphere.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_vector2.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_vector3.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_vector4.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_vector_dynamic.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_algorithm.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_fixed.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_geom.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_grid.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_image_2d.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_math.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_matrix_generic.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gvt_vector_generic.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_api.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_api_detail.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_class.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_functor.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_internal.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_policy.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_type.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_base_visitor.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_key_enum.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_string_atoi_ansi.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_string_atoi_win32.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_inline_functions.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gvt_value.h">
+      <Filter>__base</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_log.h">
+      <Filter>_log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_log.hpp">
+      <Filter>_log</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_logs.h">
+      <Filter>_log</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_id.h">
+      <Filter>_string&amp;id</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_id_pp.h">
+      <Filter>_string&amp;id</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_ids.h">
+      <Filter>_string&amp;id</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_string.h">
+      <Filter>_string&amp;id</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_string_detail.h">
+      <Filter>_string&amp;id</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_unit_test_utility.h">
+      <Filter>_unit_test</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_time.h">
+      <Filter>_timer&amp;date</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_time.hpp">
+      <Filter>_timer&amp;date</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_command_console.h">
+      <Filter>_debug_console</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_crc.hpp">
+      <Filter>__api</Filter>
+    </ClInclude>
+    <ClInclude Include="database\gv_database.h">
+      <Filter>_database</Filter>
+    </ClInclude>
+    <ClInclude Include="database\gv_database.hpp">
+      <Filter>_database</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_file_manager_win32.hpp">
+      <Filter>___win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_log_win32.hpp">
+      <Filter>___win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_network_win32.hpp">
+      <Filter>___win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_thread_win32.hpp">
+      <Filter>___win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_time_win32.hpp">
+      <Filter>___win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\gv_win32_func.hpp">
+      <Filter>___win32</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_base_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_event_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_file_manager_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_ip_address_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_key_mapping_ansi.h">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_log_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_mutex_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_network_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_thread_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi\gv_time_ansi.hpp">
+      <Filter>___ansi</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_state_machine.h">
+      <Filter>_state_machine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_state_machine.hpp">
+      <Filter>_state_machine</Filter>
+    </ClInclude>
+    <ClInclude Include="gesture\gv_gesture.h">
+      <Filter>_gesture</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\gv_lua_commandlet.hpp">
+      <Filter>_lua</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\gv_lua_vm.hpp">
+      <Filter>_lua</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_stream_cached.h">
+      <Filter>_file_system</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_stats.h">
+      <Filter>_performance</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_stats.hpp">
+      <Filter>_performance</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_mnet_node.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_mnet_node.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_packet.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_asio.h">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_asio.hpp">
+      <Filter>_network</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_math_fixed.hpp">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_math_fixed.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\gv_base_android.hpp">
+      <Filter>_android_src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\gv_jni.hpp">
+      <Filter>_android_src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\gv_stream_android_asset.hpp">
+      <Filter>_android_src</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\android\gv_android.h">
+      <Filter>_android_src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\gv_android_app.hpp">
+      <Filter>_android_src</Filter>
+    </ClInclude>
+    <ClInclude Include="math\gv_math_int.h">
+      <Filter>_math</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_config.h">
+      <Filter>___config</Filter>
+    </ClInclude>
+    <ClInclude Include="gesture\gv_gesture_all_in_one.hpp">
+      <Filter>___all_in_one_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="openal\gv_audio_all_in_one.hpp">
+      <Filter>___all_in_one_utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="android\jni\Application.mk">
+      <Filter>___android\jni</Filter>
+    </None>
+    <None Include="android\jni\Android.mk">
+      <Filter>___android\jni</Filter>
+    </None>
+    <None Include="lex\xml.lx">
+      <Filter>_xml</Filter>
+    </None>
+    <None Include="lex\normal.lx">
+      <Filter>_lexer</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all_in_one\gv_base_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_lib\gv_boost_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="math\gv_math_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="all_in_one\gv_os_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gv_base_private.cpp" />
+    <ClCompile Include="src\gv_policy_memory.hpp">
+      <Filter>_memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gv_profiler.hpp">
+      <Filter>_performance</Filter>
+    </ClCompile>
+    <ClCompile Include="asio\gv_asio_all_in_one.hpp">
+      <Filter>___all_in_one_utility</Filter>
+    </ClCompile>
+    <ClCompile Include="lua\gv_lua_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\gv_png_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gv_zlib_all_in_one.cpp">
+      <Filter>___all_in_one</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="android\AndroidManifest.xml">
+      <Filter>___android</Filter>
+    </Xml>
+    <Xml Include="android\build.xml">
+      <Filter>___android</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="lex\gv_lex.hpp">
+      <Filter>_lexer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="lex\gv_lexer.hpp">
+      <Filter>_lexer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="lex\gv_lex_xml.hpp">
+      <Filter>_xml</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gv_base.hpp">
+      <Filter>__base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gv_command_console.hpp">
+      <Filter>_debug_console</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

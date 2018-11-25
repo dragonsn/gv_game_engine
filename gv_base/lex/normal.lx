@@ -1,0 +1,188 @@
+let     [_a-zA-Z]	/* Letter 								*/
+alnum   [_a-zA-Z0-9]	/* Alphanumeric character			*/
+h       [0-9a-fA-F]	/* Hexadecimal digit					*/
+o       [0-7]		/* Octal digit							*/
+d       [0-9]		/* Decimal digit						*/
+suffix  [UuLl]		/* Suffix in integral numeric constant	*/
+white   [\x00-\x09\x0b\s\n\x0d]      /* White space: all control chars but \n */
+
+%%  
+
+"/*"([*]*(([^*/])+([/])*)*)*"*/"  	{/*return COMMENT ;*/}
+
+"//"([^\n])*\n        			{/*return COMMENT ;*/}
+
+
+\"(\\.|[^\"\\])*\"     			{token_to_string(); return TOKEN_STRING; }
+
+\"(\\.|[^\"\\])*\n    			error("Adding missing \" to string constant\n");
+
+\'(\\.|[^\'\\])*\'     			{token_to_string(); return TOKEN_STRING; }
+
+\'(\\.|[^\'\\])*\n    			error("Adding missing \' to string constant\n");
+
+(\-|\+)?{d}+{suffix}?                  		{token_to_int();return TOKEN_ICON ;}
+
+(\-|\+)?({d}+|{d}+\.{d}*|{d}*\.{d}+)([eE][\-+]?{d}+)?[fF]?	{token_to_float(); return TOKEN_FCON ;}
+
+(\-|\+)?("nan"|"NAN"|inf)				{token_to_double(); return TOKEN_FCON ;}
+
+(\-|\+)?"0x"{h}+			     	{ token_to_hex(); return TOKEN_ICON ;}
+
+"("                     return TOKEN_LP;
+
+")"                     return TOKEN_RP;
+
+"{"                     return TOKEN_LC;
+
+"}"                     return TOKEN_RC;
+
+"["                     return TOKEN_LB;
+
+"]"                     return TOKEN_RB;
+
+\\                      return TOKEN_ESC; 
+
+"->"                    return TOKEN_STRUCTOP;
+
+"."                     return TOKEN_DOT;
+
+~			return TOKEN_MTH_UNOP;
+	
+!                    	return TOKEN_BOOL_UNOP;
+
+"*"                     return TOKEN_STAR;
+
+"/"			return TOKEN_DIVOP;
+
+"%"			return TOKEN_MOD;
+
+"+"                     return TOKEN_PLUS;
+
+"-"                     return TOKEN_MINUS;
+
+"<<"                   	return TOKEN_SHIFT_LEFT;
+
+">>"                   	return TOKEN_SHIFT_RIGHT;
+
+">="			return TOKEN_GREATE;
+
+"<="			return TOKEN_SMALLE;
+
+"=="			return TOKEN_EQUOP ;
+
+">"			return TOKEN_GREATER;
+
+"<"			return TOKEN_SMALLER;
+
+"!="                   	return TOKEN_NOT_EQUOP;
+
+"=="                   	return TOKEN_EQUOP;
+
+=			return TOKEN_ASSIGNOP;
+
+"&"                     return TOKEN_AND;
+
+"^"                     return TOKEN_XOR;
+
+"|"                     return TOKEN_OR;
+
+"&&"                    return TOKEN_ANDAND;
+
+"||"                    return TOKEN_OROR;
+
+"?"                     return TOKEN_QUEST;
+
+":"                     return TOKEN_COLON;
+
+","                     return TOKEN_COMMA;
+
+";"                     return TOKEN_SEMI;
+
+"..."			return TOKEN_ELLIPSIS;
+
+"++"			return TOKEN_INC;
+
+"--"			return TOKEN_DEC; 
+
+
+
+
+\n		        ;
+
+{white}+             	{;	/* ignore other white space */}
+
+"#"			return TOKEN_PRE_OP;
+
+{let}{alnum}*           {return TOKEN_ID;}
+
+%%
+/* 
+
+*/
+
+/*------------------------------------------------------------------*/
+/*  module name:        gv_lex.cpp								 	*/ 	
+/*	don't change the cpp file manually,								*/
+/*  change the normal.lx instead									*/
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@@transit table stay here :static int d_trans[]={.....}
+
+@@accept table stay here :static int tab_accept[]={.....}
+
+
+LEX_FUNC_NAME() 
+{
+	using namespace gv::gv_lang_cpp;
+	
+	while (1)
+	{
+		token_start(); 
+		set_last_state(0); 
+		while (1) 
+		{
+				gv_byte  a = next(); 
+	
+				int   nstate= d_trans	[get_last_state()*MAX_CHARS+a] ; 
+	
+				if  (nstate==LEX_INVALID_STATE ) 
+				{
+					if(is_marked()) 
+					{
+						restore();
+						break;
+					}
+	
+					else if(is_empty()) return 0;
+	
+				}
+				else if ( tab_accept[nstate])
+				{
+					set_last_state(nstate); 
+					mark(); 
+				}
+				else
+				{
+					set_last_state(nstate); 
+				}
+		}
+
+	 	switch(get_last_state())
+	 	{
+@@/*switch case start here: */
+	
+	 	}
+	 }
+
+	return 0;  
+	
+}//lex function
+
+

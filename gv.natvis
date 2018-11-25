@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+
+<Type Name="gv::gvt_array&lt;*&gt;">
+    <DisplayString>{{ size={array_size} }}</DisplayString>
+    <Expand>
+        <Item Name="[size]" ExcludeView="simple" >array_size</Item>
+        <Item Name="[array_max]" ExcludeView="simple">array_max</Item>
+        <IndexListItems>
+            <Size>array_size</Size>
+            <ValueNode>data_ptr[$i]</ValueNode>
+        </IndexListItems>
+    </Expand>
+</Type>
+
+<Type Name="gv::gvt_string &lt;*&gt;">
+    <DisplayString>{data_ptr,s}</DisplayString>
+</Type>
+
+<Type Name="gv::gv_id">
+    <DisplayString>{ppair->key.data_ptr,s}</DisplayString>
+</Type>
+
+<Type Name="gv::gv_object_name">
+    <DisplayString>{m_id}</DisplayString>
+</Type>
+
+<Type Name="gv::gv_object">
+    <DisplayString>{m_name}</DisplayString>
+</Type>
+
+<Type Name="gv::gvt_slist&lt;*&gt;">
+    <DisplayString Condition="first_node == 0">empty</DisplayString>
+    <DisplayString Condition="first_node != 0">non-empty</DisplayString>
+    <Expand>
+        <LinkedListItems>
+            <HeadPointer>first_node</HeadPointer>
+            <NextPointer>next</NextPointer>
+            <ValueNode>data</ValueNode>
+        </LinkedListItems>
+    </Expand>
+</Type>
+
+</AutoVisualizer>

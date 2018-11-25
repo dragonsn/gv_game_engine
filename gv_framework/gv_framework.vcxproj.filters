@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_user_interface">
+      <UniqueIdentifier>{896cd810-452b-4d77-9feb-f9f1d357e0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_animation">
+      <UniqueIdentifier>{af98b509-08c1-4f64-a728-01710b244c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_network_highlevel">
+      <UniqueIdentifier>{3e60f358-2e23-420a-bd8d-b207308903c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_network_highlevel\3d_lobby">
+      <UniqueIdentifier>{77c29d67-5e9d-4333-8a6c-32045619e860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_utility">
+      <UniqueIdentifier>{bf84c268-023b-4fcb-9edf-59ed736e27b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_entity&amp;component">
+      <UniqueIdentifier>{f5642122-ed89-42b3-b679-58141b559415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_entity&amp;component\component">
+      <UniqueIdentifier>{f87f1e35-d0df-4d1c-832a-95b2b86ce1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__framework">
+      <UniqueIdentifier>{f8316dff-098c-4cff-84d0-ffdefaedbae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_world">
+      <UniqueIdentifier>{278a35d2-2540-4294-88f9-8c73f25bb270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_world\2D">
+      <UniqueIdentifier>{a42cff5c-7c8d-4a7d-9f3b-fc8e231a42b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_render">
+      <UniqueIdentifier>{0448a02d-fcf5-423a-84d5-0ddc3fb28d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_render\_resource">
+      <UniqueIdentifier>{9f102f95-c4aa-4b70-ad6c-df9aaf49a751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_render\_material">
+      <UniqueIdentifier>{a3f4304e-4064-412a-9998-6bee9af09f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_render\_renderer">
+      <UniqueIdentifier>{7dfcb2ba-d9e8-4e93-85bd-6160e33b24b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_render\_terrain">
+      <UniqueIdentifier>{0bc1ca79-3c1f-438e-8907-9d6d5a894c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_engine">
+      <UniqueIdentifier>{763f1731-d918-4996-b88d-2c2409bb32d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_ai">
+      <UniqueIdentifier>{485de63d-a790-453e-8f73-c7587e5a7933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__cls">
+      <UniqueIdentifier>{a068289a-d0c5-4e74-8cba-a1d832cee091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__driver">
+      <UniqueIdentifier>{13714604-fcab-4cca-9599-71cb7a437e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___all_in_ones">
+      <UniqueIdentifier>{6b62eba0-bfdd-4131-8e7d-b2c92272047f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="___android">
+      <UniqueIdentifier>{60fa4761-6952-4102-bb88-bbce550937f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__events">
+      <UniqueIdentifier>{b00d198f-46c6-4e2c-a036-be2660d8fa33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__id">
+      <UniqueIdentifier>{c6ca612f-512b-4af6-bfb3-d8d535855fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_world\3D">
+      <UniqueIdentifier>{ee2162f9-a9c2-4be0-8ef2-f712c5a1b3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__object_class_sandbox">
+      <UniqueIdentifier>{26b251d2-bf7d-45e7-b94b-019290875dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_task">
+      <UniqueIdentifier>{e0af366c-cdad-458b-9cdf-e65d946a4b30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gv_framework.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\gv_id_lexer.cpp">
+      <Filter>_utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gv_utility.cpp">
+      <Filter>_utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\gv_ai.cpp">
+      <Filter>_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="animation\gv_animation_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="component\gv_com_controller_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="component\gv_com_graphic_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="component\gv_com_terrain_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="_all_in_one\gv_engine_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="component\gv_entity_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\gv_material_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="network\gv_network_manager_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="_all_in_one\gv_object_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\gv_renderer_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="_all_in_one\gv_sandbox_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="user_interface\gv_ui_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="world\gv_world_all_in_one.cpp">
+      <Filter>___all_in_ones</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gv_object.cpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gv_framework_plan.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_input_manager.h">
+      <Filter>_user_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="user_interface\gv_input_manager.hpp">
+      <Filter>_user_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="user_interface\gv_ui_module.h">
+      <Filter>_user_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="user_interface\gv_ui_module.hpp">
+      <Filter>_user_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="user_interface\gvi_ui_manager.h">
+      <Filter>_user_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="user_interface\gvi_ui_manager.hpp">
+      <Filter>_user_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_private.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_key.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_sequence.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_sequence.hpp">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_set.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_set.hpp">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_skeletal.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_skeletal.hpp">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_struct.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_track.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_track.hpp">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_ani_tree.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_animation.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_animation.h">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\gv_com_animation.hpp">
+      <Filter>_animation</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_com_net_host.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_com_net_host.hpp">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_com_net_replica.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_com_net_replica.hpp">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_database_manager.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_database_manager.hpp">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_cmd.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_cmd_basic.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_cmd_maker.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_commands.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_net_event.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_replica.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_replica.hpp">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_replica_basic.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_replica_maker.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_replicas.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_net_va_helper.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_network_framework.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_network_manager.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_network_manager.hpp">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_remote_call.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_remote_call.hpp">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_remote_call_basic.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_remote_call_maker.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_remote_call_maker_helper.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_remote_calls.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_3d_lobby_controller.hpp">
+      <Filter>_network_highlevel\3d_lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\gv_id_lex.hpp">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_id_lexer.h">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\gv_id_space.h">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_importer_exporter.h">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_importer_exporter.hpp">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_builder.h">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_object_builder.hpp">
+      <Filter>_utility</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_component.h">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_component.hpp">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_component_manager.hpp">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_entity.h">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_entity.hpp">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_entity_manager.h">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_entity_manager.hpp">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_resource.h">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_resource.hpp">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_resource_manager.h">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_resource_manager.hpp">
+      <Filter>_entity&amp;component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_ai_script.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_attach.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_attach.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_cam_fps_fly.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_camera.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_camera.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_client.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_graphic.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_graphic.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_observer_camera_controller.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_particle.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_physics.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_server.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_skeletal_debugger.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_skeletal_mesh.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_skeletal_mesh.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_static_mesh.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_static_mesh.hpp">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_terrain.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_trigger.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_x_mesh.h">
+      <Filter>_entity&amp;component\component</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_defines.h">
+      <Filter>__framework</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_persistent_type.h">
+      <Filter>__framework</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world.h">
+      <Filter>_world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world.hpp">
+      <Filter>_world</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_2d_helper.hpp">
+      <Filter>_world\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_actor_2d.hpp">
+      <Filter>_world\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world_2d.h">
+      <Filter>_world\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world_2d.hpp">
+      <Filter>_world\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_render_option.h">
+      <Filter>_render</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_render_option.hpp">
+      <Filter>_render</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_render_unit_test.h">
+      <Filter>_render</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_renderer_va_helper.h">
+      <Filter>_render</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_image.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_image.hpp">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_index_buffer.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_model.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_model.hpp">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_particle_emitter.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_particle_system.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_pixel_format.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_pixel_shader.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_render_resource.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_skeletal_mesh.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_skeletal_mesh.hpp">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_static_mesh.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_static_mesh.hpp">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_terrain.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_texture.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_texture.hpp">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_vertex_buffer.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_vertex_format.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_vertex_shader.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_vertex_usages.h">
+      <Filter>_render\_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_effect.h">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_effect.hpp">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_effect_semantic.h">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_effect_struct.h">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_material.h">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_material.hpp">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_material_template.h">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_shader.h">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_shader.hpp">
+      <Filter>_render\_material</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_component_renderer.h">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_debug_renderer.h">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_debug_renderer.hpp">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_renderer.h">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_renderer.hpp">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_scene_renderer.h">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\gv_ui_renderer.h">
+      <Filter>_render\_renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_terrain_grass.h">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_terrain_grass.hpp">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_terrain_roam.h">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_terrain_roam.hpp">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_terrain_structs.h">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="terrain\roam\gv_roam_chunk.hpp">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="terrain\roam\gv_roam_node.hpp">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="terrain\roam\gv_roam_patch.hpp">
+      <Filter>_render\_terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_com_game.h">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_com_game.hpp">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_engine_struct.h">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_game_engine.h">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_game_engine.hpp">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_game_engine_main.hpp">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_game_engine_main_android.hpp">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_game_engine_main_win32.hpp">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gv_game_event_processor.hpp">
+      <Filter>_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\gv_ai.h">
+      <Filter>_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\gv_bt_macro.h">
+      <Filter>_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\gv_com_ai_player_controller_rpg.hpp">
+      <Filter>_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_tasklet.h">
+      <Filter>_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="component\gv_com_tasklet.hpp">
+      <Filter>_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_classes.h">
+      <Filter>__cls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_framework_structs.hpp">
+      <Filter>__cls</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_va_helper.h">
+      <Filter>__cls</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_func_param_structs.h">
+      <Filter>__cls</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_driver.h">
+      <Filter>__driver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_driver.hpp">
+      <Filter>__driver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_any.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_class_info.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_class_info.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_class_macro_pp.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_data_model.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_data_model_enum.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_data_model_event.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_data_model_ex.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_func_info.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_func_info.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_module.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_module.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_object.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_event.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_event_pp.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_object_iterator.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_job.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_macro.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_package.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_object_script.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_object_struct.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_sandbox.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_sandbox.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_sandbox_classes.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_sandbox_events.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_sandbox_manager.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_sandbox_manager.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_sandbox_module.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_sandbox_property.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_type.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type_array.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type_object.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type_ptr.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type_ref_ptr.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type_static_array.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_type_text.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_var_info.h">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_var_info.hpp">
+      <Filter>__object_class_sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_event_channels.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_event_maker.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_event_processor.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gv_event_processor.hpp">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_event_ids.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_events.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_render_event.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_ui_event.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_world_event.h">
+      <Filter>__events</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_ids.h">
+      <Filter>__id</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_actor_3d.hpp">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_collider_3d.h">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_collider_3d.hpp">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_actor_3d.h">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world_3d.h">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world_grid.h">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_physics_3d_fixed.h">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_world_3d.hpp">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="world\gv_physics_3d_fixed.hpp">
+      <Filter>_world\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_lockstep_manager.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="network\gv_server.h">
+      <Filter>_network_highlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="task\gv_task_manager.h">
+      <Filter>_task</Filter>
+    </ClInclude>
+    <ClInclude Include="task\gv_task_manager.hpp">
+      <Filter>_task</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\gv_framework_config.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="android\jni\Android.mk">
+      <Filter>___android</Filter>
+    </None>
+    <None Include="android\jni\Application.mk">
+      <Filter>___android</Filter>
+    </None>
+    <None Include="utility\gv_ids.lx">
+      <Filter>_utility</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="android\AndroidManifest.xml">
+      <Filter>___android</Filter>
+    </Xml>
+    <Xml Include="android\build.xml">
+      <Filter>___android</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="world\gv_world_grid.hpp">
+      <Filter>_world\3D</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,143 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__unit_tests", "__unit_tests", "{0AF4618F-40F4-46C1-B2BB-E5708B82D7E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__editor", "__editor", "{41A77A33-00C1-4006-87CA-61FF8F3D73E1}"
+	ProjectSection(SolutionItems) = preProject
+		__applications\gv_editor_launcher\readme.txt = __applications\gv_editor_launcher\readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__drivers", "__drivers", "{42246898-6A83-40F2-88FF-2A606B25FD0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "___build_tool", "___build_tool", "{6BBEFABE-D1B3-432C-B564-AA10E3ACBBFD}"
+	ProjectSection(SolutionItems) = preProject
+		clear_scc.bat = clear_scc.bat
+		rebuild_lex.bat = rebuild_lex.bat
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_framework", "gv_framework\gv_framework.vcxproj", "{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_base", "gv_base\gv_base.vcxproj", "{2E81B5AE-41EA-4430-93B1-C7652217B957}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_renderer_d3d9", "__drivers\gv_renderer_d3d9\gv_renderer_d3d9.vcxproj", "{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_base_unit_test", "__unit_tests\gv_base_unit_test\gv_base_unit_test.vcxproj", "{601E8B6E-67BF-4430-BBF7-0AFDFC734972}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_framework_unit_test", "__unit_tests\gv_framework_unit_test\gv_framework_unit_test.vcxproj", "{65979C47-9C06-498F-B2AF-6028FC75E64A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E76F80E9-B702-4CF3-A401-440074BF4C12} = {E76F80E9-B702-4CF3-A401-440074BF4C12}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_importer_exporter_driver", "__drivers\gv_importer_exporter_driver\gv_importer_exporter_driver.vcxproj", "{58BD50FF-86D0-438A-849E-BFC6FEDF4445}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_gameplay3d_driver", "__drivers\gv_gameplay3d_driver\gv_gameplay3d_driver.vcxproj", "{E76F80E9-B702-4CF3-A401-440074BF4C12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__android", "__android", "{5D189D82-864E-4DE6-8CA6-06E01294CFCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0598875F-0321-4D81-91E0-48C8F5137F55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "org", "org", "{8949A8C5-55A7-458B-ACF4-4B43071FF4B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gv_game_engine", "gv_game_engine", "{D4458D3A-09CE-4EB1-A309-4BB53881697B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "engine", "engine", "{7788338E-E974-49A6-9755-D4DA8F7678F0}"
+	ProjectSection(SolutionItems) = preProject
+		__android\src\org\gv_game_engine\engine\game.java = __android\src\org\gv_game_engine\engine\game.java
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_renderer_bgfx", "__drivers\gv_renderer_bgfx\gv_renderer_bgfx.vcxproj", "{85C8A0DB-BA25-4F02-B434-6C8395671800}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_editor", "__applications\gv_editor\gv_rts_editor.vcxproj", "{6EC9A676-D4E1-432F-B314-879453FAA8D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gv_editor_launcher", "__applications\gv_editor_launcher\gv_editor_launcher.vcxproj", "{D5657A2E-B0DE-44AD-AA31-2082D169255E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__script", "__script", "{772154FD-1E04-4B88-ADB8-BB547AF3AFE2}"
+	ProjectSection(SolutionItems) = preProject
+		..\gv_script\build_android.bat = ..\gv_script\build_android.bat
+		..\gv_script\sed.vbs = ..\gv_script\sed.vbs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Android|64bit = Android|64bit
+		Debug|64bit = Debug|64bit
+		Release|64bit = Release|64bit
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}.Android|64bit.ActiveCfg = Debug_Android|x64
+		{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}.Android|64bit.Build.0 = Debug_Android|x64
+		{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{ACCAC0FA-FC8C-4E6F-96CF-76137009D09E}.Release|64bit.Build.0 = Release_DLL|x64
+		{2E81B5AE-41EA-4430-93B1-C7652217B957}.Android|64bit.ActiveCfg = Debug_Android|x64
+		{2E81B5AE-41EA-4430-93B1-C7652217B957}.Android|64bit.Build.0 = Debug_Android|x64
+		{2E81B5AE-41EA-4430-93B1-C7652217B957}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{2E81B5AE-41EA-4430-93B1-C7652217B957}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{2E81B5AE-41EA-4430-93B1-C7652217B957}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{2E81B5AE-41EA-4430-93B1-C7652217B957}.Release|64bit.Build.0 = Release_DLL|x64
+		{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2}.Android|64bit.ActiveCfg = Debug_DLL|x64
+		{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2}.Release|64bit.Build.0 = Release_DLL|x64
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972}.Android|64bit.ActiveCfg = Debug_Android|x64
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972}.Android|64bit.Build.0 = Debug_Android|x64
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972}.Release|64bit.Build.0 = Release_DLL|x64
+		{65979C47-9C06-498F-B2AF-6028FC75E64A}.Android|64bit.ActiveCfg = Debug_Android|x64
+		{65979C47-9C06-498F-B2AF-6028FC75E64A}.Android|64bit.Build.0 = Debug_Android|x64
+		{65979C47-9C06-498F-B2AF-6028FC75E64A}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{65979C47-9C06-498F-B2AF-6028FC75E64A}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{65979C47-9C06-498F-B2AF-6028FC75E64A}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{65979C47-9C06-498F-B2AF-6028FC75E64A}.Release|64bit.Build.0 = Release_DLL|x64
+		{58BD50FF-86D0-438A-849E-BFC6FEDF4445}.Android|64bit.ActiveCfg = Debug_DLL|x64
+		{58BD50FF-86D0-438A-849E-BFC6FEDF4445}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{58BD50FF-86D0-438A-849E-BFC6FEDF4445}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{58BD50FF-86D0-438A-849E-BFC6FEDF4445}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{58BD50FF-86D0-438A-849E-BFC6FEDF4445}.Release|64bit.Build.0 = Release_DLL|x64
+		{E76F80E9-B702-4CF3-A401-440074BF4C12}.Android|64bit.ActiveCfg = Debug_Android|x64
+		{E76F80E9-B702-4CF3-A401-440074BF4C12}.Android|64bit.Build.0 = Debug_Android|x64
+		{E76F80E9-B702-4CF3-A401-440074BF4C12}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{E76F80E9-B702-4CF3-A401-440074BF4C12}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{E76F80E9-B702-4CF3-A401-440074BF4C12}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{E76F80E9-B702-4CF3-A401-440074BF4C12}.Release|64bit.Build.0 = Release_DLL|x64
+		{85C8A0DB-BA25-4F02-B434-6C8395671800}.Android|64bit.ActiveCfg = Debug_DLL|x64
+		{85C8A0DB-BA25-4F02-B434-6C8395671800}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{85C8A0DB-BA25-4F02-B434-6C8395671800}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{85C8A0DB-BA25-4F02-B434-6C8395671800}.Release|64bit.ActiveCfg = Release_DLL|x64
+		{85C8A0DB-BA25-4F02-B434-6C8395671800}.Release|64bit.Build.0 = Release_DLL|x64
+		{6EC9A676-D4E1-432F-B314-879453FAA8D5}.Android|64bit.ActiveCfg = Debug_DLL|x64
+		{6EC9A676-D4E1-432F-B314-879453FAA8D5}.Debug|64bit.ActiveCfg = Debug_DLL|x64
+		{6EC9A676-D4E1-432F-B314-879453FAA8D5}.Debug|64bit.Build.0 = Debug_DLL|x64
+		{6EC9A676-D4E1-432F-B314-879453FAA8D5}.Release|64bit.ActiveCfg = Debug_DLL|x64
+		{6EC9A676-D4E1-432F-B314-879453FAA8D5}.Release|64bit.Build.0 = Debug_DLL|x64
+		{D5657A2E-B0DE-44AD-AA31-2082D169255E}.Android|64bit.ActiveCfg = Debug|x64
+		{D5657A2E-B0DE-44AD-AA31-2082D169255E}.Debug|64bit.ActiveCfg = Debug|x64
+		{D5657A2E-B0DE-44AD-AA31-2082D169255E}.Release|64bit.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05BF2CCF-B3E3-4BC9-88FA-8B40066D2DB2} = {42246898-6A83-40F2-88FF-2A606B25FD0A}
+		{601E8B6E-67BF-4430-BBF7-0AFDFC734972} = {0AF4618F-40F4-46C1-B2BB-E5708B82D7E2}
+		{65979C47-9C06-498F-B2AF-6028FC75E64A} = {0AF4618F-40F4-46C1-B2BB-E5708B82D7E2}
+		{58BD50FF-86D0-438A-849E-BFC6FEDF4445} = {42246898-6A83-40F2-88FF-2A606B25FD0A}
+		{E76F80E9-B702-4CF3-A401-440074BF4C12} = {42246898-6A83-40F2-88FF-2A606B25FD0A}
+		{0598875F-0321-4D81-91E0-48C8F5137F55} = {5D189D82-864E-4DE6-8CA6-06E01294CFCF}
+		{8949A8C5-55A7-458B-ACF4-4B43071FF4B2} = {0598875F-0321-4D81-91E0-48C8F5137F55}
+		{D4458D3A-09CE-4EB1-A309-4BB53881697B} = {8949A8C5-55A7-458B-ACF4-4B43071FF4B2}
+		{7788338E-E974-49A6-9755-D4DA8F7678F0} = {D4458D3A-09CE-4EB1-A309-4BB53881697B}
+		{85C8A0DB-BA25-4F02-B434-6C8395671800} = {42246898-6A83-40F2-88FF-2A606B25FD0A}
+		{6EC9A676-D4E1-432F-B314-879453FAA8D5} = {41A77A33-00C1-4006-87CA-61FF8F3D73E1}
+		{D5657A2E-B0DE-44AD-AA31-2082D169255E} = {41A77A33-00C1-4006-87CA-61FF8F3D73E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5782A68-1D0B-40A6-9B1B-999A7DB98E30}
+	EndGlobalSection
+EndGlobal

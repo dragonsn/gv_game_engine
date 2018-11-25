@@ -1,0 +1,800 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMPORT DIALOGEX 0, 0, 316, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,42,50,14
+    EDITTEXT        IDC_EDIT1,14,19,195,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "browser..",IDC_BUTTON1,217,18,46,15
+    GROUPBOX        "source file name",IDC_STATIC,7,7,293,29
+END
+
+IDD_SELECT_CONFIG DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,162,50,14
+    COMBOBOX        IDC_COMBO1,22,22,139,81,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_SELECT_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_VIEW_MODE           BITMAP                  "res\\toolbar1.bmp"
+IDR_BROWSER             BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_VIEW_MODE TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_VIEW_ACTOR
+    BUTTON      ID_VIEW_MAP
+    BUTTON      ID_VIEW_GAME
+    BUTTON      ID_VIEW_TERRAIN
+END
+
+IDR_BROWSER TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SELECT_PREV
+    BUTTON      ID_SELECT_NEXT
+    BUTTON      ID_VIEW_HIDE_DEBUG_DRAW
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About gv_rts_editor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "gv_rts_editor, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PROPERTY_POPUP DIALOGEX 0, 0, 293, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,14,50,14
+    GROUPBOX        "Static",IDC_STATIC,7,35,269,277
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,17,54,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PROPERTY_POPUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+IDB_NAVIGATION_LARGE    BITMAP                  "res\\nav_large.bmp"
+IDB_NAVIGATION_LARGE_HC BITMAP                  "res\\nav_large_hc.bmp"
+IDB_PAGES               BITMAP                  "res\\pages.bmp"
+IDB_PAGES_HC            BITMAP                  "res\\pages_hc.bmp"
+IDB_PAGES_SMALL         BITMAP                  "res\\pages_small.bmp"
+IDB_PAGES_SMALL_HC      BITMAP                  "res\\pages_small_hc.bmp"
+IDB_INFO                BITMAP                  "res\\info.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_SORT TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\gv_rts_editor.ico"
+IDR_gv_rts_editorTYPE   ICON                    "res\\gv_rts_editorDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Profiler",               ID_FILE_OPENPROFILE
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select Next",                 ID_SELECT_NEXT
+        MENUITEM "Select Prev",                 ID_SELECT_PREV
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars and Docking Windows"
+        BEGIN
+            MENUITEM "<placeholder>",               ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Caption Bar",                ID_VIEW_CAPTION_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 200&5",     ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM "view map",                    ID_VIEW_MAP
+        MENUITEM "view actor architype",        ID_VIEW_ACTOR
+        MENUITEM "view game",                   ID_VIEW_GAME
+        MENUITEM "hide/unhide debug draw",      ID_VIEW_HIDE_DEBUG_DRAW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About gv_rts_editor...",     ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU
+BEGIN
+    POPUP "Sorting"
+    BEGIN
+        MENUITEM "&Sort Alphabeticaly",         ID_SORTING_SORTALPHABETIC
+        MENUITEM "Sort by &Type",               ID_SORTING_SORTBYTYPE
+        MENUITEM "Sort by Acc&ess",             ID_SORTING_SORTBYACCESS
+        MENUITEM "Group by t&ype",              ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU
+BEGIN
+    POPUP "Explorer"
+    BEGIN
+        MENUITEM "Load Module",                 ID_LOAD_MODULE
+        MENUITEM "Save Module",                 ID_SAVE_MODULE
+        MENUITEM "Save the Module as...",       ID_EXPLORER_COPY_MODULE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "new module",                  ID_EXPLORER_NEWMODULE
+        MENUITEM "binarize module",             ID_EXPLORER_BINARIZEMODULE
+        MENUITEM "xmlize module",               ID_EXPLORER_XMLIZEMODULE
+        MENUITEM "unload module",               ID_EXPLORER_UNLOADMODULE
+        MENUITEM "new map module",              ID_EXPLORER_NEW_MAP
+        MENUITEM "save game entity as architype", ID_EXPLORER_SAVEGAMEENTITYASARCHITYPE
+        MENUITEM "save current selected entity as architype", ID_EXPLORER_SAVECURRENTSELECTEDENTITYASARCHITYPE
+        MENUITEM "save current material",       ID_EXPLORER_SAVECURRENTMATERIAL
+    END
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Clear",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_POPUP_OBJECT MENU
+BEGIN
+    POPUP "manuplate objects"
+    BEGIN
+        MENUITEM "import placeholder0",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER0
+        MENUITEM "import placeholder1",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER1
+        MENUITEM "import placeholder2",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER2
+        MENUITEM "import placeholder3",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER3
+        MENUITEM "import placeholder4",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER4
+        MENUITEM "import placeholder5",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER5
+        MENUITEM "import placeholder6",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER6
+        MENUITEM "import placeholder7",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER7
+        MENUITEM "import placeholder8",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER8
+        MENUITEM "import placeholder9",         ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER9
+        MENUITEM "import placeholder10",        ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER10
+        MENUITEM "import placeholder11",        ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER11
+        MENUITEM "import placeholder12",        ID_MANUPLATEOBJECTS_IMPORTPLACEHOLDER12
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "gv_rts_editor.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "gv_rts_editor.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_MAIN_TAB            "main"
+    IDS_EVENT_TAB           "event"
+    IDS_DATABASE_TAB        "database"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "gv_rts_editor\n\ngv_rts_editor\n\n\ngvrtseditor.Document\ngv_rts_editor.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "gv_rts_editor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_CAPTION_BAR     "Show or hide the caption bar\nToggle Caption Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILE_VIEW           "File View"
+    IDS_CLASS_VIEW          "Class View"
+    IDS_OUTPUT_WND          "Output"
+    IDS_PROPERTIES_WND      "Properties"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXPLORER            "Explorer"
+    IDS_EDIT_MENU           "Edit"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RIBBON_CAPTIONBAR   "Caption Bar"
+    IDS_BUILD_TAB           "Build"
+    IDS_DEBUG_TAB           "Debug"
+    IDS_FIND_TAB            "Find"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MYCALENDARS         "My Calendars"
+    IDS_CALENDAR            "Calendar"
+    IDS_SHORTCUTS           "Shortcuts"
+    IDS_FOLDERS             "Folders"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OUTLOOKBAR          "Outlook Bar"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CAPTION_BUTTON      "Options..."
+    IDS_CAPTION_BUTTON_TIP  "Click here to see more options"
+    IDS_CAPTION_TEXT        "This is a caption bar where a message can be presented to the user."
+    IDS_CAPTION_IMAGE_TIP   "Important"
+    IDS_CAPTION_IMAGE_TEXT  "Here is an informational message for the user."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEW_OBJECT_DIALOG DIALOGEX 0, 0, 304, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "new object"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,247,50,50,14
+    EDITTEXT        IDC_EDIT1,32,25,146,16,ES_AUTOHSCROLL
+    GROUPBOX        "name",IDC_STATIC,21,15,196,49
+    LTEXT           "Give a name for the new object, must be a valid id!",IDC_STATIC,32,43,209,8
+END
+
+IDD_NEW_MODULE_DIALOG DIALOGEX 0, 0, 305, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Module"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,157,93,50,14
+    EDITTEXT        IDC_EDIT1,32,25,146,16,ES_AUTOHSCROLL
+    GROUPBOX        "name",IDC_STATIC,21,15,196,49
+    LTEXT           "Give a name for the new module, must be a valid id!",IDC_STATIC,32,43,209,8
+    CONTROL         "xml",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,71,52,11
+    LTEXT           "suggest use xml ,if change the module open",IDC_STATIC,64,71,200,16
+    PUSHBUTTON      "Cancel",IDCANCEL,229,93,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_NEW_OBJECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_NEW_MODULE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\gv_rts_editor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxprint.rc""               // printing/print preview resources\r\n"
+    "#include ""afxribbon.rc""              // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\gv_rts_editor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#if !defined(_AFXDLL)
+#include "afxprint.rc"               // printing/print preview resources
+#include "afxribbon.rc"              // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

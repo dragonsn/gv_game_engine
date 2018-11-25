@@ -1,0 +1,1 @@
+xcopy ..\..\..\..\..\gv_test_resources\android  /S /D /Y

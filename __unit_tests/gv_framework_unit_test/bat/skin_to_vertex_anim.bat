@@ -1,0 +1,1 @@
+gv_framework_unit_test  console tool tool_morph_texture_builder -fbx -%1

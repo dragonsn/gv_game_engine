@@ -1,0 +1,186 @@
+let     [_a-zA-Z]	/* Letter 								*/
+alnum   [_a-zA-Z0-9]	/* Alphanumeric character			*/
+h       [0-9a-fA-F]	/* Hexadecimal digit					*/
+o       [0-7]		/* Octal digit							*/
+d       [0-9]		/* Decimal digit						*/
+suffix  [UuLl]		/* Suffix in integral numeric constant	*/
+white   [\x00-\x09\x0b\s\n\x0d]      /* White space: all control chars but \n */
+
+%%  
+
+\n		        ;
+
+{white}+             	{;	/* ignore other white space */}
+
+"gvt_array"	           {return TOKEN_array;}
+
+"gv_byte"			   {return TOKEN_byte;}
+
+"gv_char"			   {return TOKEN_char;}
+
+"gv_short"			   {return TOKEN_short;}
+
+"gv_ushort"			   {return TOKEN_ushort;}
+
+"gv_int"			   {return TOKEN_int;}
+
+"gv_uint"			   {return TOKEN_uint;}
+
+"gv_long"			   {return TOKEN_long;}
+
+"gv_ulong"			   {return TOKEN_ulong;}
+
+"gv_float"			   {return TOKEN_float;}
+
+"gv_double"			   {return TOKEN_double;}
+
+"gv_string"			   {return TOKEN_string;}
+
+"gv_id"				   {return TOKEN_id;}
+
+"gvt_ptr"			   {return TOKEN_ptr;}
+
+"gvt_ref_ptr"		   {return TOKEN_ref_ptr;}
+
+"gv_vector3"		   {return TOKEN_vector3;}
+
+"gv_matrix44"		   {return TOKEN_matrix44;}
+
+"gv_object"				{return TOKEN_object;}
+	
+"gv_object_name"		{return TOKEN_object_name;}	
+
+"gvt_array_static"		{return TOKEN_static_array;}	
+
+"gv_text"				{return TOKEN_text;}	
+
+"gvi_type"				{return TOKEN_gvi_type;}	
+
+"gv_vector2"			{return TOKEN_vector2;}
+
+"gv_vector2b"			{return TOKEN_vector2b;}
+
+"gv_vector3b"			{return TOKEN_vector3b;}
+
+"gv_vector2w"			{return TOKEN_vector2w;}
+
+"gv_vector3i"			{return TOKEN_vector3i;}
+
+"gv_vector4"			{return TOKEN_vector4;}
+
+"gv_vector4i"			{return TOKEN_vector4i;}
+
+"gv_matrix43"			{return TOKEN_matrix43;}
+
+"gv_color"				{return TOKEN_color;}
+
+"gv_colorf"				{return TOKEN_colorf;}
+
+"gv_bool"				{return TOKEN_bool;}
+
+"gv_euler"				{return TOKEN_euler;}
+
+"gv_quat"				{return TOKEN_quat;}
+
+"main"					{return TOKEN_main;}
+					
+"base"				{return TOKEN_base;}
+					
+"vector"			{return TOKEN_vector;}
+					
+"render"			{return TOKEN_render;}
+					
+"console"			{return TOKEN_console;}
+					
+"max"				{return TOKEN_max;}	
+					
+"min"				{return TOKEN_min;}
+					
+"null"				{return TOKEN_null;}
+					
+"new"				{return TOKEN_new;}
+					
+"delete"			{return TOKEN_delete;}
+					
+"unknown"			{return TOKEN_unknown;}
+					
+"any"				{return TOKEN_any;}
+					
+"none"				{return TOKEN_none;}
+					
+"dummy"				{return TOKEN_dummy;}
+
+"gv_time_stamp"     {return TOKEN_time_stamp;}
+
+{let}{alnum}*           {return TOKEN_ID;}
+
+%%
+/* 
+
+*/
+
+/*------------------------------------------------------------------*/
+/*  module name:        gv_lex.cpp								 	*/ 	
+/*	don't change the cpp file manually,								*/
+/*  change the normal.lx instead									*/
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@@transit table stay here :static int d_trans[]={.....}
+
+@@accept table stay here :static int tab_accept[]={.....}
+
+
+LEX_FUNC_NAME() 
+{
+	using namespace gv_id_space;
+	
+	while (1)
+	{
+		token_start(); 
+		set_last_state(0); 
+		while (1) 
+		{
+				gv_byte  a = next(); 
+	
+				int   nstate= d_trans	[get_last_state()*MAX_CHARS+a] ; 
+	
+				if  (nstate==LEX_INVALID_STATE ) 
+				{
+					if(is_marked()) 
+					{
+						restore();
+						break;
+					}
+	
+					else if(is_empty()) return 0;
+	
+				}
+				else if ( tab_accept[nstate])
+				{
+					set_last_state(nstate); 
+					mark(); 
+				}
+				else
+				{
+					set_last_state(nstate); 
+				}
+		}
+
+	 	switch(get_last_state())
+	 	{
+@@/*switch case start here: */
+	
+	 	}
+	 }
+
+	return 0;  
+	
+}//lex function
+
+

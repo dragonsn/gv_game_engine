@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="tests_base">
+      <UniqueIdentifier>{3901361c-77c2-4427-b1c6-91542884359c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_all_in_one">
+      <UniqueIdentifier>{3e93782b-d06a-4c09-8818-b3ae0b980136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__pre">
+      <UniqueIdentifier>{fb5ab0f1-d52f-4a58-8cba-66d1ddde8e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests_network">
+      <UniqueIdentifier>{12783d50-cb3b-4735-9fcb-1df8358d52ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools_base">
+      <UniqueIdentifier>{959e4aee-d8e1-42d7-afb2-d72fc08db1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests_math">
+      <UniqueIdentifier>{5879b7a2-6497-40a8-a48d-d45fc8136984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__android">
+      <UniqueIdentifier>{44c39796-ae9f-429d-a2d0-4ef29bdfdaa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__android\res">
+      <UniqueIdentifier>{de3cebfe-f422-431c-a460-47817fe23a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__win32">
+      <UniqueIdentifier>{4b92996c-f8a5-4f9f-b336-e41c39936ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bat">
+      <UniqueIdentifier>{91487270-0623-4a31-bad9-6d21c460df3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gv_base_unit_test.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_unit_tests_base_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_unit_tests_math_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_unit_tests_network_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_unit_tests_tools_all_in_one.cpp">
+      <Filter>_all_in_one</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>__pre</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gv_base_unit_tests.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_array_cached.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_array_simple.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_array_static.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_boost_range_test.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_call_stack.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_console_event.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_dictionary.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_dlist.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_file_manager.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gv_id.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gv_memory_pool.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gv_memory_stack.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gv_xml_parser.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gvt_memory_pool.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gvt_set.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_gvt_singleton.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_hash_map_simple.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_lexer.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_lock_free_list.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_lock_free_list_function.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_lock_free_pool.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_log.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_memory_cached.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_pool_fixed_size.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_profiler_simple.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_ref_count.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_ring_buf_simple.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_slist.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_stack.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_string_simple.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_string_to_float_to_int_conversion.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_thread_simple.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>__pre</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_data_base.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_database_stored_proc.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_iocp_udp_server.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_network_1v1_tcp_server.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_network_1v1_udp_server.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_network_address.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_network_packet.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_rudp_server.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_make_gv_file.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_memory_alloc_analysis.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_parser_xml_dom.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_trace_parser.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_axis_angle.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_color.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_dynamic_vector.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_euler.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_filter.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_fixed.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_geom.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_matrix43.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_matrix44.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_matrix44_xna.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_matrix_generic.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_quaternion.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_trace_line_2d.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_vector3.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_vector_generic.hpp">
+      <Filter>tests_math</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_base_unit_test_android.hpp">
+      <Filter>__android</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_base_unit_test_android_game.hpp">
+      <Filter>__android</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_base_unit_test_win32.hpp">
+      <Filter>__win32</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_asio.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_asio_chat.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_asio_http_server.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_check_assets_name.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_find_duplicate_asset.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_lua_console.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_c_to_cpp.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_stats.hpp">
+      <Filter>tests_base</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_test_asio_udp.hpp">
+      <Filter>tests_network</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_file_visitor.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="android\jni\Android.mk">
+      <Filter>__android</Filter>
+    </None>
+    <None Include="android\jni\Application.mk">
+      <Filter>__android</Filter>
+    </None>
+    <None Include="android\copy_assets.bat">
+      <Filter>__android</Filter>
+    </None>
+    <None Include="bat\_tool_sample_loop.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_unity_check_assets.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_unity_check_assets_bundle_cs.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_c_to_cpp.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="..\..\..\gv_temp\新建文件夹 (3)\gv_game_engine\clear_scc.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_bp_to_cpp.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_file_visitor.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_format_cpp.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\_tool_format_cpp2.bat">
+      <Filter>bat</Filter>
+    </None>
+    <None Include="bat\unity_check_assets_bundle_cs.bat">
+      <Filter>bat</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="android\AndroidManifest.xml">
+      <Filter>__android</Filter>
+    </Xml>
+    <Xml Include="android\build.xml">
+      <Filter>__android</Filter>
+    </Xml>
+    <Xml Include="android\res\values\strings.xml">
+      <Filter>__android\res</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="android\res\drawable\icon.png">
+      <Filter>__android\res</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

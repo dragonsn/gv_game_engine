@@ -1,0 +1,13 @@
+#include "gv_framework/inc/gv_class_macro_pp.h"
+
+GVM_REGISTER_CLASS(gv_test_human_record)
+GVM_REGISTER_CLASS(gv_test_human_job_info)
+
+GVM_REGISTER_STRUCT(gv_rpg2d_cell)
+
+GVM_REGISTER_CLASS(gv_world_rpg2d)
+GVM_REGISTER_CLASS(gv_com_rpg2d_actor)
+GVM_REGISTER_CLASS(gv_com_rpg2d_actor_online)
+GVM_REGISTER_CLASS(gv_com_test_ai)
+
+#undef GVM_REGISTER_CLASS

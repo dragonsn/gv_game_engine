@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DLL|Win32">
+      <Configuration>Debug_DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_DLL|x64">
+      <Configuration>Debug_DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Android|Win32">
+      <Configuration>Debug_Android</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Android|x64">
+      <Configuration>Debug_Android</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DLL|Win32">
+      <Configuration>Release_DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DLL|x64">
+      <Configuration>Release_DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Android|Win32">
+      <Configuration>Release_Android</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Android|x64">
+      <Configuration>Release_Android</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65979C47-9C06-498F-B2AF-6028FC75E64A}</ProjectGuid>
+    <RootNamespace>gv_framework_unit_test</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <SccAuxPath>
+    </SccAuxPath>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|Win32'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <NMakeBuildCommandLine>..\..\build_android $(ProjectDir) $(OutDir) $(SolutionDir) debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine />
+    <NMakeCleanCommandLine />
+    <NMakeOutput />
+    <NMakePreprocessorDefinitions>__ANDROID__</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Android|x64'">
+    <NMakeBuildCommandLine>..\..\build_android $(ProjectDir) $(OutDir) $(SolutionDir) debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine />
+    <NMakeCleanCommandLine />
+    <NMakeOutput />
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'">
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\gv_game\test\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\gv_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;LIBCMT.lib ;MSVCRTD.lib ;msvcprtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)gv_framework_unit_test.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>copy files</Message>
+      <Command> xcopy   $(Solutiondir)..\gv_test_resources\android\assets $(OutDir)  /S /D /Y </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;LIBCMT.lib ;MSVCRTD.lib ;msvcprtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)gv_framework_unit_test.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>copy files</Message>
+      <Command> xcopy   $(Solutiondir)..\gv_test_resources\android\assets $(OutDir)  /S /D /Y </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996 ; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>copy files</Message>
+      <Command> xcopy   $(Solutiondir)..\gv_test_resources\android\assets $(OutDir)  /S /D /Y </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996 ; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>copy files</Message>
+      <Command> xcopy   $(Solutiondir)..\gv_test_resources\android\assets $(OutDir)  /S /D /Y </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;dinput8.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)gv_framework_unit_test.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\..\gv_external\boost;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)gv_framework_unit_test.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external; ..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996 ; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;dinput8.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\..\gv_external\boost;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996 ; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996 ; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\gv_framework\inc;..\..\gv_base\inc;..\..\..\gv_external;..\..\;..\..\..\gv_external\fbxsdk\include;..\..\..\gv_external\gameplay3d\external-deps\lua\include;..\..\..\gv_external\gameplay3d\external-deps\bullet/include;..\..\..\gv_external\gameplay3d\external-deps\openal/include/AL;..\..\..\gv_external\gameplay3d\external-deps\oggvorbis/include;..\..\..\gv_external\gameplay3d\external-deps\libpng/include;..\..\..\gv_external\gameplay3d\external-deps\zlib/include;..\..\..\gv_external\gameplay3d\external-deps\glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996 ; 4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;winmm.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)gv_framework_unit_test.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\gv_external\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="2d_bricks_maps.h" />
+    <ClInclude Include="2d_bricks_online.h" />
+    <ClInclude Include="2d_bricks_online.hpp" />
+    <ClInclude Include="gv_com_rpg2d_actor_online.h" />
+    <ClInclude Include="gv_com_rpg2d_actor_online.hpp" />
+    <ClInclude Include="gv_dom_test.h" />
+    <ClInclude Include="gv_framework_console_test.hpp" />
+    <ClInclude Include="gv_framework_console_tests.h" />
+    <ClInclude Include="gv_framework_console_test_windows.hpp" />
+    <ClInclude Include="gv_framework_tests.h" />
+    <ClInclude Include="gv_framework_test_browser.hpp" />
+    <ClInclude Include="gv_framework_test_res.h" />
+    <ClInclude Include="gv_framework_unit_test_helper.hpp" />
+    <ClInclude Include="gv_rendering_test_common.h" />
+    <ClInclude Include="gv_simple_test_render.hpp" />
+    <ClInclude Include="gv_test_classes.h" />
+    <ClInclude Include="gv_world_rpg2d.h" />
+    <ClInclude Include="gv_world_rpg2d.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tool_binarize.hpp" />
+    <ClInclude Include="tool_morph_texture_builder.hpp" />
+    <ClInclude Include="tool_perf_viewer_2d.hpp" />
+    <ClInclude Include="unit_network_test_chat.hpp" />
+    <ClInclude Include="unit_network_test_lobby_mmo.hpp" />
+    <ClInclude Include="unit_network_test_lobby_with_replica.hpp" />
+    <ClInclude Include="unit_network_test_replica.hpp" />
+    <ClInclude Include="unit_network_test_send_command.hpp" />
+    <ClInclude Include="unit_test_3d_init.hpp" />
+    <ClInclude Include="unit_test_3d_lobby.hpp" />
+    <ClInclude Include="unit_test_ai_controller.hpp" />
+    <ClInclude Include="unit_test_database.hpp" />
+    <ClInclude Include="unit_test_display_animation.hpp" />
+    <ClInclude Include="unit_test_entity.hpp" />
+    <ClInclude Include="unit_test_fixed_point.hpp" />
+    <ClInclude Include="unit_test_game_engine.hpp" />
+    <ClInclude Include="unit_test_game_engine_async_load.hpp" />
+    <ClInclude Include="unit_test_gesture_2d.hpp" />
+    <ClInclude Include="unit_test_image.hpp" />
+    <ClInclude Include="unit_test_image_process.hpp" />
+    <ClInclude Include="unit_test_importer_exporter.hpp" />
+    <ClInclude Include="unit_test_importer_exporter_3ds.hpp" />
+    <ClInclude Include="unit_test_importer_exporter_fbx.hpp" />
+    <ClInclude Include="unit_test_importer_exporter_rfx.hpp" />
+    <ClInclude Include="unit_test_job_queue.hpp" />
+    <ClInclude Include="unit_test_load_x_file.hpp" />
+    <ClInclude Include="unit_test_network_login.hpp" />
+    <ClInclude Include="unit_test_processor.hpp" />
+    <ClInclude Include="unit_test_reflection.hpp" />
+    <ClInclude Include="unit_test_render_geom_2d.hpp" />
+    <ClInclude Include="unit_test_render_simple_2d.hpp" />
+    <ClInclude Include="unit_test_render_with_input_2d.hpp" />
+    <ClInclude Include="unit_test_rfx_view.hpp" />
+    <ClInclude Include="unit_test_roam_terrain.hpp" />
+    <ClInclude Include="unit_test_rts.h" />
+    <ClInclude Include="unit_test_rts.hpp" />
+    <ClInclude Include="unit_test_rts_classes.h" />
+    <ClInclude Include="unit_test_rts_imp.hpp" />
+    <ClInclude Include="unit_test_sandbox.hpp" />
+    <ClInclude Include="unit_test_save_load.hpp" />
+    <ClInclude Include="unit_test_touch_listener.hpp" />
+    <ClInclude Include="unit_test_ui.hpp" />
+    <ClInclude Include="unit_test_world_2d.hpp" />
+    <ClInclude Include="unit_test_world_3d.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="first_online_game_2d_bricks.cpp" />
+    <ClCompile Include="gv_framework_unit_test.cpp" />
+    <ClCompile Include="gv_framework_unit_tests_all_in_one.cpp" />
+    <ClCompile Include="gv_framework_unit_tests_networking_all_in_one.cpp" />
+    <ClCompile Include="gv_framework_unit_test_advanced_all_in_one.cpp" />
+    <ClCompile Include="gv_framework_unit_test_debug_draw_all_in_one.cpp" />
+    <ClCompile Include="gv_framework_unit_test_rendering_all_in_one.cpp" />
+    <ClCompile Include="gv_framework_unit_test_tools_all_in_one.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Android|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Android|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\gv_framework\gv_framework.vcxproj">
+      <Project>{accac0fa-fc8c-4e6f-96cf-76137009d09e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__drivers\gv_gameplay3d_driver\gv_gameplay3d_driver.vcxproj">
+      <Project>{e76f80e9-b702-4cf3-a401-440074bf4c12}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__drivers\gv_importer_exporter_driver\gv_importer_exporter_driver.vcxproj">
+      <Project>{58bd50ff-86d0-438a-849e-bfc6fedf4445}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__drivers\gv_renderer_bgfx\gv_renderer_bgfx.vcxproj">
+      <Project>{85c8a0db-ba25-4f02-b434-6c8395671800}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__drivers\gv_renderer_d3d9\gv_renderer_d3d9.vcxproj">
+      <Project>{05bf2ccf-b3e3-4bc9-88fa-8b40066d2db2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\gv_temp\New folder (10)\gv_game_engine\clear_scc.bat" />
+    <None Include="bat\view_mp.bat" />
+    <None Include="bat\view_mp_xml.bat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

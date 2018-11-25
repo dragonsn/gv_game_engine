@@ -1,0 +1,18 @@
+#include "gv_class_macro_pp.h"
+
+GVM_REGISTER_CLASS(gv_renderer_d3d9)
+GVM_REGISTER_CLASS(gv_com_x_mesh_renderer)
+GVM_REGISTER_CLASS(gv_com_x_mesh_cache_d3d)
+
+GVM_REGISTER_CLASS(gv_com_simple_shader_renderer)
+GVM_REGISTER_CLASS(gv_com_wire_frame_renderer)
+GVM_REGISTER_CLASS(gv_com_effect_renderer)
+GVM_REGISTER_CLASS(gv_texture_d3d)
+GVM_REGISTER_CLASS(gv_vertex_buffer_d3d)
+GVM_REGISTER_CLASS(gv_index_buffer_d3d)
+GVM_REGISTER_CLASS(gv_shader_d3d)
+GVM_REGISTER_CLASS(gv_roam_chunk_d3d)
+GVM_REGISTER_CLASS(gv_com_roam_d3d)
+GVM_REGISTER_CLASS(gv_com_roam_renderer)
+GVM_REGISTER_CLASS(gv_com_instancing_renderer)
+#undef GVM_REGISTER_CLASS

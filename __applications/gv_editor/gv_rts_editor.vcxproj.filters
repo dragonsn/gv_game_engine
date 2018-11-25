@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="rc">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="ini">
+      <UniqueIdentifier>{892048de-0453-4286-a956-f36df072de29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gv">
+      <UniqueIdentifier>{f306bce9-a830-4812-8e4f-2923d3326baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plan">
+      <UniqueIdentifier>{66c47241-1bc7-4e8e-b990-6ce8d5b595a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CalendarBar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassViewTree.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="FileViewTree.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GV_FunctionGridCtrl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GV_PropertyGridCtrl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_rts_editor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_rts_editorDoc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_rts_editorView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NewModuleDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NewObjectDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectViewTree.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectConfigDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="gv\gv_rts_editor_engine.cpp">
+      <Filter>gv</Filter>
+    </ClCompile>
+    <ClCompile Include="gv_editor_plan.cpp">
+      <Filter>plan</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyPopup.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalendarBar.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassViewTree.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FileViewTree.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="GV_FunctionGridCtrl.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="GV_PropertyGridCtrl.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_rts_editor.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_rts_editorDoc.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv_rts_editorView.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDialog.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="NewModuleDialog.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="NewObjectDialog.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectViewTree.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectConfigDialog.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="gv\gv_rts_editor_engine.h">
+      <Filter>gv</Filter>
+    </ClInclude>
+    <ClInclude Include="gv\gv_rts_editor_engine_classes.h">
+      <Filter>gv</Filter>
+    </ClInclude>
+    <ClInclude Include="gv\gv_rts_editor_engine_structs.h">
+      <Filter>gv</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyPopup.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\file_view.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\gv_rts_editor.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\gv_rts_editorDoc.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\info.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\nav_large.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\nav_large_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\pages.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\pages_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\pages_small.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\pages_small_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>rc</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>rc</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gv_rts_editor.rc">
+      <Filter>rc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\gv_rts_editor.rc2">
+      <Filter>rc</Filter>
+    </None>
+    <None Include="ini\game_engine.ini">
+      <Filter>ini</Filter>
+    </None>
+    <None Include="ini\gv_rts_editor.ini">
+      <Filter>ini</Filter>
+    </None>
+    <None Include="ini\mmo.config">
+      <Filter>ini</Filter>
+    </None>
+    <None Include="ini\mobile_rpg.config">
+      <Filter>ini</Filter>
+    </None>
+    <None Include="ini\NBA.config">
+      <Filter>ini</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

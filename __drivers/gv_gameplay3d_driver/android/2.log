@@ -1,0 +1,3 @@
+:(\d+):(\d+)
+($1)
+make: *** No rule to make target `jni/../../../../../../../gv_game_engine/__drivers/gv_gameplay3d_driver/gameplay_all_in_one.cpp', needed by `obj/local/armeabi-v7a/objs/gvgp/gameplay_all_in_one.o'.  Stop.
