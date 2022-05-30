@@ -9,11 +9,113 @@ static const   int cell_size_x   =100;
 static const int cell_size_y   =50;
 static const int actor_size	=7;
 
+inline bool intersect_test(const gv_vector2 &  ray, const gv_rect& rect, float & time, gv_vector2 & normal)
+{
+	float enter_time = FLT_MIN, leave_time = FLT_MAX;
+	if (gvt_is_almost_zero(ray.x))
+	{
+		if (0 < rect.min_p.x || 0 > rect.max_p.x)
+			return false;
+	}
+	else
+	{
+		float s = (rect.min_p.x) / ray.x;
+		float t = (rect.max_p.x) / ray.x;
+		//test if inside or ray facing to wrong side
+		normal = gv_vector2(-1, 0);
+		if (s > t)
+		{
+			gvt_swap(s, t);
+			normal = gv_vector2(1, 0);
+		}
+		enter_time = s;
+		leave_time = t;
+		time = s;
+	}
+	// y 
+	if (gvt_is_almost_zero(ray.y))
+	{
+		if (0 < rect.min_p.y || 0 > rect.max_p.y)
+			return false;
+	}
+	else
+	{
+		float s = (rect.min_p.y) / ray.y;
+		float t = (rect.max_p.y) / ray.y;
+		//test if inside or ray facing to wrong side
+		gv_vector2 n2 = gv_vector2(0, -1);
+		if (s > t)
+		{
+			gvt_swap(s, t);
+			n2 = gv_vector2(0, 1);
+		}
+		if (s > enter_time)
+		{
+			enter_time = s;
+			time = s;
+			normal = n2;
+		}
+		if (t < leave_time)
+		{
+			leave_time = t;
+		}
+	}
+	if (enter_time > leave_time)
+		return false;
+	if (time < 0 || time > 1)
+		return false;
+	return true;
+}
+/*sweep a moving aabb in 2d space*/
+inline bool sweep_test(const gv_rect & mover, const gv_rect & being_tested,
+	gv_vector2 velocity, float & time_of_impact, gv_vector2 & normal,
+	float min_time = 0)
+{
+	if (gvt_is_almost_zero(velocity.length_squared()))
+	{
+		return false;
+	}
+	//Minkowskidifference 
+	gv_rect r = being_tested;
+	r.min_p -= mover.max_p;
+	r.max_p -= mover.min_p;
+	if (r.inside(gv_vector2::get_zero_vector()))
+	{
+		//already overlap!
+		return false;
+	}
+	bool hit = intersect_test(velocity, r, time_of_impact, normal);
+	if (!hit)
+		return false;
+
+	if (time_of_impact >= min_time)
+	{
+		time_of_impact -= min_time;
+	}
+	else
+	{
+		time_of_impact = 0;
+	}
+	return true;
+}
+
+/*sweep a moving aabb in 2d space*/
+inline bool sweep_test2(const gv_rect & mover, const gv_rect & being_tested,
+	gv_vector2 velocity, gv_sweep_result& result,
+	float skin = 0)
+{
+	gv_vector2 n;
+	bool ret=sweep_test(mover, being_tested, velocity, result.time_of_impact,n , 0.01f);
+	result.normal = n;
+	return ret;
+}
+
 class actor:public gv_refable
 {
 public:
 	actor():m_speed(0,0),m_rotation(0),m_size((gv_float)actor_size)
 	{
+		m_aabb.add(gv_vector2(0, 0));
 		m_aabb.set_size((gv_float)actor_size,(gv_float)actor_size);
 		m_is_hit=0;
 		m_hit_actor=0;
@@ -343,7 +445,13 @@ public:
 			if (!cells[i]->m_can_move_on)
 			{
 				gv_sweep_result result;
-				bool hit=gv_geom::sweep(pactor->m_aabb,cells[i]->m_rect,delta_pos,result,0.5);
+				//bool hit=gv_geom::sweep(pactor->m_aabb,cells[i]->m_rect,delta_pos,result,0.5);
+				//bool hit1 = gv_geom::sweep(pactor->m_aabb, cells[i]->m_rect, delta_pos, result, 0.5);
+				bool hit = sweep_test2(pactor->m_aabb, cells[i]->m_rect, delta_pos, result, 0.5);
+			/*	if (hit1 != hit) {
+					sweep_test2(pactor->m_aabb, cells[i]->m_rect, delta_pos, result, 0.5);
+				}*/
+				
 				if (pactor->m_aabb.top +delta_pos.y<=50.f )
 				{
 					//GV_DEBUG_BREAK;
@@ -362,7 +470,8 @@ public:
 				if (pactor2->m_test_tag==tag) continue;
 				pactor2->m_test_tag=tag;
 				gv_sweep_result result;
-				bool hit=gv_geom::sweep(pactor->m_aabb,pactor2->m_aabb,delta_pos,result,0.5);
+				//bool hit=gv_geom::sweep(pactor->m_aabb,pactor2->m_aabb,delta_pos,result,0.5);
+				bool hit = sweep_test2(pactor->m_aabb, pactor2->m_aabb, delta_pos, result, 0.5);
 				if (hit && result.time_of_impact < time_of_impact)
 				{
 					hit_actor=pactor2;

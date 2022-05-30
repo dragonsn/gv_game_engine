@@ -5,6 +5,7 @@
 namespace gv
 {
 
+class gv_atomic_count;
 struct gv_global_memory_info
 {
 	// make it easy to tranverse the info
