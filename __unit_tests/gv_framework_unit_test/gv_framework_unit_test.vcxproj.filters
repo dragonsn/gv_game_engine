@@ -233,6 +233,9 @@
     <ClInclude Include="unit_test_rts_imp.hpp">
       <Filter>framework_unit_tests_with_renderer_advance\rts</Filter>
     </ClInclude>
+    <ClInclude Include="stb_new_sm.h">
+      <Filter>_inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gv_framework_unit_test_advanced_all_in_one.cpp">

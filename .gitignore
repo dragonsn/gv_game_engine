@@ -36,3 +36,9 @@
 *.opendb
 *.db-shm
 *.db-wal
+*.vsidx
+.vs/gv_2017/v16/.suo
+*.db
+*.ipch
+.vs/gv_2017/v17/.suo
+*.lock

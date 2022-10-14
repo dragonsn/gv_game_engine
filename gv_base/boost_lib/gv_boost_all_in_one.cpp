@@ -2,11 +2,18 @@
 
 #pragma GV_REMINDER("[*gv_boost]: based on boost 1.61")
 
-#include "boost/libs/atomic/src/lockpool.cpp"
-#include "boost/libs/date_time/src/gregorian/date_generators.cpp"
+#define BOOST_FILESYSTEM_NO_CXX20_ATOMIC_REF
+//#include <atomic>
+
+#include "boost/libs/filesystem/src/directory.cpp"
+#include "boost/libs/filesystem/src/exception.cpp"
+
+//#include "boost/filesystem/directory.hpp"
+//#include "boost/libs/atomic/src/lockpool.cpp"
+//#include "boost/libs/date_time/src/gregorian/date_generators.cpp"
 #include "boost/libs/date_time/src/gregorian/gregorian_types.cpp"
 #include "boost/libs/date_time/src/gregorian/greg_month.cpp"
-#include "boost/libs/date_time/src/gregorian/greg_weekday.cpp"
+//#include "boost/libs/date_time/src/gregorian/greg_weekday.cpp"
 #include "boost/libs/date_time/src/posix_time/posix_time_types.cpp"
 #include "boost/libs/filesystem/src/codecvt_error_category.cpp"
 #include "boost/libs/filesystem/src/operations.cpp"
@@ -15,6 +22,7 @@
 #include "boost/libs/filesystem/src/portability.cpp"
 #include "boost/libs/filesystem/src/unique_path.cpp"
 #include "boost/libs/filesystem/src/utf8_codecvt_facet.cpp"
+
 #include "boost/libs/filesystem/src/windows_file_codecvt.cpp"
 #include "boost/libs/system/src/error_code.cpp"
 #include "boost/libs/thread/src/future.cpp"
