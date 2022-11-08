@@ -529,6 +529,7 @@
     <ClInclude Include="tool_make_gv_file.hpp" />
     <ClInclude Include="tool_memory_alloc_analysis.hpp" />
     <ClInclude Include="tool_parser_xml_dom.hpp" />
+    <ClInclude Include="tool_remove_duplicate.hpp" />
     <ClInclude Include="tool_trace_parser.hpp" />
     <ClInclude Include="unit_test_array_cached.hpp" />
     <ClInclude Include="unit_test_array_simple.hpp" />

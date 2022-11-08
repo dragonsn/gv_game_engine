@@ -283,6 +283,9 @@
     <ClInclude Include="tool_file_visitor.hpp">
       <Filter>tools_base</Filter>
     </ClInclude>
+    <ClInclude Include="tool_remove_duplicate.hpp">
+      <Filter>tools_base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="android\jni\Android.mk">

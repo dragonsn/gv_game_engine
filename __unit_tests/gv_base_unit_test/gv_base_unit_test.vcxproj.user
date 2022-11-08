@@ -17,11 +17,11 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">
-    <LocalDebuggerCommandArguments>console tool all</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>console tool tool_remove_duplicate -C:\ZTEST\O_METAL.stablepc.csv -Game/12_VFX/Mobile/Materials/MI/Special/MI_FX_Spline_002.MI_FX_Spline_002</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
-    <LocalDebuggerCommandArguments>console tool all</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>console tool  tool_remove_duplicate -C:\ZTEST\O_ANDROID.stablepc.csv  -Game/12_VFX/Mobile/Materials/MI/Special/MI_FX_Spline_002.MI_FX_Spline_002</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">

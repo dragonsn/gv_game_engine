@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+.vs/
 .vs/gv_2017/v15/.suo
 .vs/gv_2017/v15/Browse.VC.db
 .vs/gv_2017/v15/Solution.VC.db
@@ -42,3 +43,5 @@
 *.ipch
 .vs/gv_2017/v17/.suo
 *.lock
+.vs/gv_2017/v17/fileList.bin
+__unit_tests/gv_base_unit_test/gv_base_unit_test.vcxproj.user

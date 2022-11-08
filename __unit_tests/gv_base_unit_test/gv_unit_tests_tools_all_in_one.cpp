@@ -7,6 +7,7 @@ using namespace std;
 #include "tool_lua_console.hpp"
 #include "tool_parser_xml_dom.hpp"
 #include "tool_memory_alloc_analysis.hpp"
+#include "tool_remove_duplicate.hpp"
 #include "tool_find_duplicate_asset.hpp"
 #include "tool_c_to_cpp.hpp"
 #include "tool_bp_to_cpp.hpp"
